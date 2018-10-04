@@ -5,8 +5,7 @@ The plug-in consists of a set of standardized ETLs that agencies would use to mi
 
 DOCUMENTATION
 
-The installation materials reside in the following location:
-1.	The Ed-Fi GitHub location  is specifically set aside for this project
+The installation documentation resides in the https://github.com/Ed-Fi-Alliance/Ed-Fi-X-ETL-To-Generate/ repository
  
  (!) Requires that you have a GitHub account to access the code. If you do not have access to Ed-Fi GitHub repositories, please submit an access request.
 
