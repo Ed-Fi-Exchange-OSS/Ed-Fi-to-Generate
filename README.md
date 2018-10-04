@@ -1,5 +1,20 @@
 # Ed-Fi-X-ETL-To-Generate
-ETL scripts for data out of the Ed-Fi ODS and into Generate.
+The Ed-Fi Generate plug-in provides a standard means to transfer data from an Ed-Fi ODS into the Generate CEDS Integrated Data Store (IDS).  
+The plug-in consists of a set of standardized ETLs that agencies would use to migrate data from an Ed-Fi ODS into CEDS IDS and into CEDS Reporting Data Store.  
+
+
+DOCUMENTATION
+
+The installation materials reside in the following location:
+1.	The Ed-Fi GitHub location  is specifically set aside for this project
+ 
+ (!) Requires that you have a GitHub account to access the code. If you do not have access to Ed-Fi GitHub repositories, please submit an access request.
+
+2.	 Sign-in to GitHub if you are not currently logged in.  Navigate to https://github.com/Ed-Fi-Alliance/Ed-Fi-X-ETL-To-Generate repository to access the documentation and the migration scripts.  
+The above repository contains the SQL scripts and documentation necessary to install and configure the Plug In.  
+
+
+
 
 ## License
 Copyright © Ed-Fi Alliance. All rights reserved.
