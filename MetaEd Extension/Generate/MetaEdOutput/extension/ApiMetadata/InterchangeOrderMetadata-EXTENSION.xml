@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+  Order of the Interchange elements and the Element elements is important. 
+  Unlike the current order provider, this metadata will list all aggregate types that are part of the interchange. 
+  The extension metadata will replace the core metadata and contain all interchanges and elements for the implementation.
+-->
+<Interchanges>
+  <Interchange name="Descriptors" order="10">
+    <Element name="VirtualSchoolStatusDescriptor" />
+    <Element name="TitleIProgramStaffCategoryDescriptor" />
+    <Element name="SpecialEducationSupportServicesCategoryDescriptor" />
+    <Element name="SpecialEducationAgeGroupTaughtDescriptor" />
+    <Element name="SharedTimeIndicatorDescriptor" />
+    <Element name="ReconstitutedStatusDescriptor" />
+    <Element name="NationalSchoolLunchProgramStatusDescriptor" />
+    <Element name="NationalSchoolLunchProgramDirectCertificationIndicatorDescriptor" />
+    <Element name="MigrantEducationProgramServicesTypeDescriptor" />
+    <Element name="MigrantEducationProgramEnrollmentTypeDescriptor" />
+    <Element name="LocalEducationAgencyTypeDescriptor" />
+    <Element name="DisciplineTypeDescriptor" />
+    <Element name="BehaviorTypeDescriptor" />
+    <Element name="WeaponDescriptor" />
+    <Element name="TermDescriptor" />
+    <Element name="TeachingCredentialDescriptor" />
+    <Element name="StudentIdentificationSystemDescriptor" />
+    <Element name="StudentCharacteristicDescriptor" />
+    <Element name="StaffIdentificationSystemDescriptor" />
+    <Element name="StaffClassificationDescriptor" />
+    <Element name="SpecialEducationSettingDescriptor" />
+    <Element name="ServiceDescriptor" />
+    <Element name="SeparationReasonDescriptor" />
+    <Element name="SectionCharacteristicDescriptor" />
+    <Element name="SchoolFoodServicesEligibilityDescriptor" />
+    <Element name="ResponsibilityDescriptor" />
+    <Element name="ResidencyStatusDescriptor" />
+    <Element name="ReporterDescriptionDescriptor" />
+    <Element name="ReasonExitedDescriptor" />
+    <Element name="ProgramCharacteristicDescriptor" />
+    <Element name="ProgramAssignmentDescriptor" />
+    <Element name="LimitedEnglishProficiencyDescriptor" />
+    <Element name="LevelOfEducationDescriptor" />
+    <Element name="LanguageDescriptor" />
+    <Element name="GraduationPlanTypeDescriptor" />
+    <Element name="GradingPeriodDescriptor" />
+    <Element name="GradeLevelDescriptor" />
+    <Element name="LevelDescriptor" />
+    <Element name="ExitWithdrawTypeDescriptor" />
+    <Element name="EntryTypeDescriptor" />
+    <Element name="EmploymentStatusDescriptor" />
+    <Element name="EducationOrganizationIdentificationSystemDescriptor" />
+    <Element name="DisciplineDescriptor" />
+    <Element name="DisabilityDescriptor" />
+    <Element name="DiagnosisDescriptor" />
+    <Element name="CourseIdentificationSystemDescriptor" />
+    <Element name="CountryDescriptor" />
+    <Element name="ContinuationOfServicesReasonDescriptor" />
+    <Element name="PerformanceLevelDescriptor" />
+    <Element name="CompetencyLevelDescriptor" />
+    <Element name="ClassroomPositionDescriptor" />
+    <Element name="CalendarEventDescriptor" />
+    <Element name="BehaviorDescriptor" />
+    <Element name="AttendanceEventCategoryDescriptor" />
+    <Element name="AssessmentPeriodDescriptor" />
+    <Element name="AssessmentIdentificationSystemDescriptor" />
+    <Element name="AssessmentCategoryDescriptor" />
+    <Element name="AdministrativeFundingControlDescriptor" />
+    <Element name="AchievementCategoryDescriptor" />
+    <Element name="AccountCodeDescriptor" />
+    <Element name="AccommodationDescriptor" />
+    <Element name="AcademicSubjectDescriptor" />
+    <Element name="CredentialFieldDescriptor" />
+  </Interchange>
+  <Interchange name="Student" order="20">
+    <Element name="Student" />
+  </Interchange>
+  <Interchange name="StaffAssociation" order="30">
+    <Element name="Staff" />
+    <Element name="StaffProgramAssociation" />
+    <Element name="LeaveEvent" />
+    <Element name="StaffEducationOrganizationEmploymentAssociation" />
+    <Element name="StaffEducationOrganizationAssignmentAssociation" />
+    <Element name="StaffSectionAssociation" />
+    <Element name="OpenStaffPosition" />
+    <Element name="StaffSchoolAssociation" />
+  </Interchange>
+  <Interchange name="PostSecondaryEvent" order="30">
+    <Element name="PostSecondaryEvent" />
+  </Interchange>
+  <Interchange name="Parent" order="40">
+    <Element name="Parent" />
+    <Element name="StudentParentAssociation" />
+  </Interchange>
+  <Interchange name="Standards" order="50">
+    <Element name="LearningStandard" />
+    <Element name="LearningObjective" />
+  </Interchange>
+  <Interchange name="EducationOrganization" order="60">
+    <Element name="EducationOrganizationNetwork" />
+    <Element name="EducationOrganizationNetworkAssociation" />
+    <Element name="EducationOrganizationPeerAssociation" />
+    <Element name="AccountabilityRating" />
+    <Element name="StateEducationAgency" />
+    <Element name="EducationServiceCenter" />
+    <Element name="LocalEducationAgency" />
+    <Element name="School" />
+    <Element name="ClassPeriod" />
+    <Element name="Location" />
+    <Element name="FeederSchoolAssociation" />
+    <Element name="Program" />
+    <Element name="Course" />
+  </Interchange>
+  <Interchange name="StudentProgram" order="70">
+    <Element name="RestraintEvent" />
+    <Element name="StudentProgramAssociation" />
+    <Element name="StudentMigrantEducationProgramAssociation" />
+    <Element name="StudentTitleIPartAProgramAssociation" />
+    <Element name="StudentCTEProgramAssociation" />
+    <Element name="StudentSpecialEducationProgramAssociation" />
+  </Interchange>
+  <Interchange name="StudentGrade" order="80">
+    <Element name="CompetencyObjective" />
+    <Element name="LearningObjective" />
+    <Element name="StudentLearningObjective" />
+    <Element name="StudentCompetencyObjective" />
+    <Element name="Grade" />
+    <Element name="ReportCard" />
+  </Interchange>
+  <Interchange name="StudentTranscript" order="90">
+    <Element name="StudentAcademicRecord" />
+    <Element name="CourseTranscript" />
+  </Interchange>
+  <Interchange name="EducationOrgCalendar" order="100">
+    <Element name="AcademicWeek" />
+    <Element name="CalendarDate" />
+    <Element name="GradingPeriod" />
+    <Element name="Session" />
+  </Interchange>
+  <Interchange name="MasterSchedule" order="110">
+    <Element name="BellSchedule" />
+    <Element name="CourseOffering" />
+    <Element name="Section" />
+  </Interchange>
+  <Interchange name="StudentEnrollment" order="120">
+    <Element name="GraduationPlan" />
+    <Element name="StudentEducationOrganizationAssociation" />
+    <Element name="StudentSchoolAssociation" />
+    <Element name="StudentSectionAssociation" />
+  </Interchange>
+  <Interchange name="StudentDiscipline" order="140">
+    <Element name="DisciplineIncident" />
+    <Element name="DisciplineAction" />
+    <Element name="StudentDisciplineIncidentAssociation" />
+  </Interchange>
+  <Interchange name="StudentCohort" order="150">
+    <Element name="Cohort" />
+    <Element name="StaffCohortAssociation" />
+    <Element name="StudentCohortAssociation" />
+  </Interchange>
+  <Interchange name="Finance" order="160">
+    <Element name="Account" />
+    <Element name="Budget" />
+    <Element name="Actual" />
+    <Element name="Payroll" />
+    <Element name="ContractedStaff" />
+  </Interchange>
+  <Interchange name="AssessmentMetadata" order="170">
+    <Element name="LearningStandard" />
+    <Element name="LearningObjective" />
+    <Element name="AssessmentFamily" />
+    <Element name="Assessment" />
+    <Element name="AssessmentItem" />
+    <Element name="ObjectiveAssessment" />
+  </Interchange>
+  <Interchange name="StudentIntervention" order="180">
+    <Element name="EducationContent" />
+    <Element name="InterventionPrescription" />
+    <Element name="EducationOrganizationInterventionPrescriptionAssociation" />
+    <Element name="InterventionStudy" />
+    <Element name="Intervention" />
+    <Element name="StudentInterventionAssociation" />
+  </Interchange>
+  <Interchange name="StudentAttendance" order="190">
+    <Element name="StudentSchoolAttendanceEvent" />
+    <Element name="StudentInterventionAttendanceEvent" />
+    <Element name="StudentProgramAttendanceEvent" />
+    <Element name="SectionAttendanceTakenEvent" />
+    <Element name="StudentSectionAttendanceEvent" />
+  </Interchange>
+  <Interchange name="StudentGradebook" order="200">
+    <Element name="LearningObjective" />
+    <Element name="GradebookEntry" />
+    <Element name="StudentGradebookEntry" />
+  </Interchange>
+  <Interchange name="StudentAssessment" order="210">
+    <Element name="StudentAssessment" />
+  </Interchange>
+</Interchanges>

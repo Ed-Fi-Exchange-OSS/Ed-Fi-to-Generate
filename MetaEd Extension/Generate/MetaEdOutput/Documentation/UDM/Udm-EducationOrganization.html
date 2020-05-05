@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><title>MetaEd Generated Interchange Brief</title><link rel="stylesheet" href="confluence-like.css"></head><body><h1 id="education-organization">Education Organization</h1>
+<hr>
+<p>The Education Organization domain defines the organizational structure and hierarchy of education organizations. The entity EducationOrganization serves as an abstraction for common attributes and associations. Throughout the model, if there is an association to/from an EducationOrganization the meaning is that the association may be associated with two or more types of organizations. The model supports the following structure:</p>
+<ul>
+<li>StateEducationAgency is an optional entity for the state department of education or equivalent.</li>
+<li>EducationServiceCenter is an optional entity for a regional organization between the district and state level.</li>
+<li>LocalEducationAgency represents a school district or charter management organization.</li>
+<li>School represents the point of education instruction.</li>
+<li>EducationOrganizationNetwork represents a self-organized membership network of peer-level schools or LEAs intended to provide shared services or collective purchasing.</li>
+<li>AccountabilityRating holds education organization ratings assigned by an accountability system.</li>
+</ul>
+<h4 id="education-organization-model-entities">Education Organization Model Entities</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AccountabilityRating</td>
+<td>An accountability rating for a school or district.</td>
+</tr>
+<tr>
+<td>EducationOrganization</td>
+<td>This entity represents any public or private institution, organization, or agency that provides instructional or support services to students or staff at any level.</td>
+</tr>
+<tr>
+<td>EducationOrganizationNetwork</td>
+<td>This entity is a self-organized membership network of peer-level education organizations intended to provide shared services or collective procurement.</td>
+</tr>
+<tr>
+<td>EducationOrganizationNetworkAssociation</td>
+<td>Properties of the association between the EducationOrganization and its network(s).</td>
+</tr>
+<tr>
+<td>EducationServiceCenter</td>
+<td>This entity represents a regional, multi-services public agency authorized by state law to develop, manage and provide services, programs, or other support options (e.g., construction, food services, and technology services) to LEAs.</td>
+</tr>
+<tr>
+<td>FeederSchoolAssociation</td>
+<td>The association from feeder school to the receiving school.</td>
+</tr>
+<tr>
+<td>LocalEducationAgency</td>
+<td>This entity represents an administrative unit at the local level which exists primarily to operate schools or to contract for educational services. It includes school districts, charter schools, charter management organizations, or other local administrative organizations.</td>
+</tr>
+<tr>
+<td>School</td>
+<td>This entity represents an educational organization that includes staff and students who participate in classes and educational activity groups.</td>
+</tr>
+<tr>
+<td>StateEducationAgency</td>
+<td>This entity represents the agency of the state charged with the primary responsibility for coordinating and supervising public instruction, including the setting of standards for elementary and secondary instructional programs.</td>
+</tr>
+</tbody></table>
+<p><img src="/path/to/domain-model.png" alt="Education Organization Model Diagram"></p>
+<h4 id="education-organization-model">Education Organization Model</h4>
+</body><html>

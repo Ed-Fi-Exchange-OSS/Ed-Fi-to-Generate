@@ -1,0 +1,37 @@
+Domain Entity CedsStudentAssessment
+    documentation "This is documentation."
+    integer AcademicSubjectDescriptorId
+        documentation "This is documentation."
+        is part of identity
+    date AdministrationDate
+      documentation ""
+      is part of identity
+    integer  AssessedGradeLevelDescriptorId
+      documentation ""
+      is part of identity
+    string CedsAssessmentTitle
+      documentation ""
+      is part of identity
+      max length 60
+    integer  CedsAssessmentVersion
+      documentation ""
+      is part of identity
+    integer  StudentUSI
+      documentation ""
+      is part of identity
+    bool StateFullAcademicYear
+      documentation ""
+      is optional
+    bool LEAFullAcademicYear
+      documentation ""
+      is optional
+    bool SchoolFullAcademicYear
+      documentation ""
+      is optional
+    date RecordStartDateTime
+      documentation ""
+      is required
+    date RecordEndDateTime
+      documentation ""
+      is optional
+      

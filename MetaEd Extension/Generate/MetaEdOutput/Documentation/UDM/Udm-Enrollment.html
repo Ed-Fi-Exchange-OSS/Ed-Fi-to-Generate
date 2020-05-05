@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><title>MetaEd Generated Interchange Brief</title><link rel="stylesheet" href="confluence-like.css"></head><body><h1 id="enrollment">Enrollment</h1>
+<hr>
+<p>The Enrollment domain represents students&#39; enrollments in schools, as specifically designated by the StudentSchoolAssociation. The model supports the two cases of where a student is limited to be enrolled only in one school at a time or cases where a state may have policies supporting multiple school enrollments. The semantics assume that a separate StudentSchoolAssociation is provided for each grade level for each student; in other words, a student is withdrawn in the previous grade level and enrolled in the next grade level when promoted.<br>For associations between a student and a school or LEA that is <em>not</em> enrollment(e.g., school of accountability), the StudentEducationOrganizationAssociation is defined.</p>
+<h4 id="enrollment-model-entities">Enrollment Model Entities</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>AccountabilityRating</td>
+<td>An accountability rating for a school or district.</td>
+</tr>
+<tr>
+<td>EducationOrganization</td>
+<td>This entity represents any public or private institution, organization, or agency that provides instructional or support services to students or staff at any level.</td>
+</tr>
+<tr>
+<td>GraduationPlan</td>
+<td>This entity is a plan outlining the required credits, credits by subject,credits by course, and other criteria required for graduation. A graduation plan may be one or more standard plans defined by an education organization and/or individual plans for some or all students.</td>
+</tr>
+<tr>
+<td>LocalEducationAgency</td>
+<td>This entity represents an administrative unit at the local level which exists primarily to operate schools or to contract for educational services. It includes school districts, charter schools, charter management organizations, or other local administrative organizations.</td>
+</tr>
+<tr>
+<td>School</td>
+<td>This entity represents an educational organization that includes staff and students who participate in classes and educational activity groups.</td>
+</tr>
+<tr>
+<td>Student</td>
+<td>This entity represents an individual for whom instruction, services, and/or care are provided in an early childhood, elementary, or secondary educational program under the jurisdiction of a school, education agency or other institution or program. A student is a person who has been enrolled in a school or other educational institution.</td>
+</tr>
+<tr>
+<td>StudentEducationOrganizationAssociation</td>
+<td>This association indicates any relationship between a student and an education organization other than how the state views enrollment. Enrollment relationship semantics are covered by StudentSchoolAssociation.</td>
+</tr>
+<tr>
+<td>StudentSchoolAssociation</td>
+<td>This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation.</td>
+</tr>
+</tbody></table>
+<p><img src="/path/to/domain-model.png" alt="Enrollment Model Diagram"></p>
+<h4 id="enrollment-model">Enrollment Model</h4>
+</body><html>

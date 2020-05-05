@@ -1,0 +1,11 @@
+Domain Entity SchoolFederalFunds
+    documentation "This is an extension attribute of edfi.School."
+    integer SchoolId
+        documentation "This is documentation."
+        is part of identity
+    integer FiscalYear
+        documentation "this is docs"
+        is part of identity
+    currency SchoolImprovementAllocation
+        documentation "this is docs"
+        is optional

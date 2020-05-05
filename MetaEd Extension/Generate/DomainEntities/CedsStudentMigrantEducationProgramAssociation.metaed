@@ -1,0 +1,6 @@
+Association CedsStudentMigrantEducationProgramAssociation based on GeneralStudentProgramAssociation
+    documentation "This entity extends the StudentMigrantEducationProgramAssociation to provide additional elements needed for the population of Generate."
+    descriptor MigrantEducationProgramEnrollmentType
+        documentation "The type of school/migrant education program in which instruction and/or support services are provided."
+        is optional
+    

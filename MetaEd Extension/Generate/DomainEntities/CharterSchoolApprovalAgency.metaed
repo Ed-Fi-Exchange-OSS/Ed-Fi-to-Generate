@@ -1,0 +1,9 @@
+Domain Entity CharterSchoolApprovalAgency
+    documentation "This is an organizzation that approves the charter school"
+    integer CharterSchoolApprovalAgencyId
+        documentation "This is the identifier of the education organization that approves charter school."
+        is part of identity
+
+     descriptor CharterApprovalAgencyType
+        documentation "This is the type of the education organization that approves charter school."
+        is required

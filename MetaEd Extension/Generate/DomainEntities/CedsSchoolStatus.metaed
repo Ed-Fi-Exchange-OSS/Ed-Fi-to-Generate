@@ -1,0 +1,19 @@
+Domain Entity CedsSchoolStatus
+    documentation  "This is an extension of edfi.School Status"
+    integer SchoolId
+        documentation "The identifier assigned to a school."
+        is part of identity
+    descriptor ProgressAchievingEnglishLanguageProficiencyIndicatorStatus
+        documentation "A school's performance indicator on the progress in achieving English Language proficiency indicator."
+        is optional
+    descriptor SchoolDangerousStatus
+        documentation "A school's status to indicate if it's in the dangerous."
+        is optional
+    string ProgressAchievingEnglishLanguageProficiencyStateDefinedStatus
+        documentation "A school's performance on the progress in State Defined achieving English Language proficiency indicator."
+        is optional
+        max length 50
+    bool ConsolidatedMepFundsStatus
+      documentation ""
+      is optional
+      

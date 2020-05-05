@@ -1,0 +1,11 @@
+Domain Entity CedsSpecialEducationStaffCategory
+    documentation "This is documentation."
+    integer StaffUSI
+        documentation "Staff USI."
+        is part of identity
+    integer SchoolId
+        documentation "School Id."
+        is part of identity
+    descriptor SpecialEducationProgramService
+    documentation "Special Education Program Service Category"
+        is required

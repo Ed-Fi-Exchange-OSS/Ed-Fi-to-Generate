@@ -1,0 +1,5 @@
+Update ssa
+Set EntryGradeLevelDescriptorId = 464 -- Fourth Grade
+
+FROM EdFi_Sample_ODS_Data_For_Generate.edfi.StudentSchoolAssociation ssa
+where studentusi = 10813

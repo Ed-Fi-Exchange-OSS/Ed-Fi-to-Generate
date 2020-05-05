@@ -1,0 +1,26 @@
+Association StaffEducationOrganizationAssignmentAssociation additions
+    descriptor SpecialEducationAgeGroupTaught
+        documentation "The Special Education Age Group Taught as defined in CEDS."
+        is optional
+    descriptor SpecialEducationSupportServicesCategory
+        documentation "The Special Education Support Services Category as defined in CEDS."
+        is optional
+    descriptor TitleIProgramStaffCategory
+        documentation "The Title I Program Staff Category as defined in CEDS"
+        is optional
+    descriptor InexperiencedStatus
+        documentation "Inexperienced Status"
+        is optional
+    descriptor EmergencyorProvisionalCredentialStatus
+        documentation "Emergency or Provisional Credential Status"
+        is optional
+    descriptor OutOfFieldStatus
+        documentation "Out Of Field Status"
+        is optional
+    date RecordStartDateTime
+        documentation ""
+        is optional
+    date RecordEndDateTime
+        documentation ""
+        is optional
+        

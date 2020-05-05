@@ -1,0 +1,117 @@
+<!DOCTYPE html><html><head><title>MetaEd Generated Interchange Brief</title><link rel="stylesheet" href="confluence-like.css"></head><body><h1 id="student-academic-record">Student Academic Record</h1>
+<hr>
+<p>The Student Academic Record domain models the various kindsof student performance reporting.</p>
+<ul>
+<li>A student transcript contains information about course-levelgrades and credits. A student transcript consists of a StudentAcademicRecord associated with each Session which has aCourseTranscript for each course taken.</li>
+<li>Report cards contain information for grading period gradesand competencies. A report card consists of a ReportCard entity for each GradingPeriod. A Grade is associated with each Sectionentity.</li>
+<li>A gradebook contains grades and competencies for classroomquizzes, tests, homework, and projects. An assignment in a Gradebook is represented as a GradebookEntry. Each student&#39;sscore for that entry is a StudentGradebookEntry which can be a grade or a CompetencyLevelDescriptor.</li>
+</ul>
+<h2 id="student-transcript">Student Transcript</h2>
+<p>A student transcript contains information about course-level grades and credits. A student transcript consists of aStudentAcademicRecord associated with each Session which has a CourseTranscript for each course taken.</p>
+<p><img src="/path/to/subdomain-model.png" alt="Student Academic Record, Student Transcript Model Diagram"><br><strong>Student Academic Record, Student Transcript Model</strong></p>
+<h2 id="report-card">Report Card</h2>
+<p>A Student has a ReportCard for each GradingPeriod. A Grade is associated with each Section. For early grade levels, a StudentCompetencyObjective is assigned to CompetencyObjectives and a StudentLearningObjective is assigned to LearningObjectives, for example, assigning a &quot;Satisfactory&quot; for &quot;Participates in class discussions.&quot; The StudentLearningObjective is either associated to a Section or a Program.</p>
+<p><img src="/path/to/subdomain-model.png" alt="Student Academic Record, Report Card Model Diagram"><br><strong>Student Academic Record, Report Card Model</strong></p>
+<h2 id="gradebook">Gradebook</h2>
+<p>An individual assignment in a gradebook is represented as a GradebookEntry. A GradebookEntry may be mapped to LearningStandards or a LearningObjective. Each student&#39;s score for that entry is a StudentGradebookEntry which can be a grade or a CompetencyLevel.</p>
+<p><img src="/path/to/subdomain-model.png" alt="Student Academic Record, Gradebook Model Diagram"><br><strong>Student Academic Record, Gradebook Model</strong></p>
+<h4 id="student-academic-record-model-entities">Student Academic Record Model Entities</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CompetencyObjective</td>
+<td>This entity holds additional competencies for student achievement that are not associated with specific learning objectives (e.g., paying attention in class).</td>
+</tr>
+<tr>
+<td>Course</td>
+<td>This educational entity represents the organization of subject matter and related learning experiences provided for the instruction of students on a regular or systematic basis.</td>
+</tr>
+<tr>
+<td>CourseOffering</td>
+<td>This entity represents an entry in the course catalog of available courses offered by the school during a session.</td>
+</tr>
+<tr>
+<td>CourseTranscript</td>
+<td>This entity is the final record of a student&#39;s performance in their courses at the end of a semester or school year.</td>
+</tr>
+<tr>
+<td>EducationOrganization</td>
+<td>This entity represents any public or private institution, organization, or agency that provides instructional or support services to students or staff at any level.</td>
+</tr>
+<tr>
+<td>Grade</td>
+<td>This educational entity represents an overall score or assessment tied to a course over a period of time (i.e., the grading period). Student grades are usually a compilation of marks and other scores.</td>
+</tr>
+<tr>
+<td>GradebookEntry</td>
+<td>This entity represents an assignment, homework, or classroom assessment to be recorded in a gradebook.</td>
+</tr>
+<tr>
+<td>GradingPeriod</td>
+<td></td>
+</tr>
+<tr>
+<td>LearningObjective</td>
+<td>This entity represents identified learning objectives for courses in specific grades.</td>
+</tr>
+<tr>
+<td>LearningStandard</td>
+<td>This entity is a sub-element of a learning objective consisting of a precise statement of the expectation of a student&#39;s proficiency.</td>
+</tr>
+<tr>
+<td>Program</td>
+<td>This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students.</td>
+</tr>
+<tr>
+<td>ReportCard</td>
+<td>This educational entity represents the collection of student grades for courses taken during a grading period.</td>
+</tr>
+<tr>
+<td>School</td>
+<td>This entity represents an educational organization that includes staff and students who participate in classes and educational activity groups.</td>
+</tr>
+<tr>
+<td>Section</td>
+<td>This entity represents a setting in which organized instruction of course content is provided, in-person or otherwise, to one or more students for a given period of time. A course offering may be offered to more than one section.</td>
+</tr>
+<tr>
+<td>Session</td>
+<td>This entity represents the prescribed span of time when an education institution is open, instruction is provided and students are under the direction and guidance of teachers and/or education institution administration. A session may be interrupted by one or more vacations.</td>
+</tr>
+<tr>
+<td>Student</td>
+<td>This entity represents an individual for whom instruction, services, and/or care are provided in an early childhood, elementary, or secondary educational program under the jurisdiction of a school, education agency or other institution or program. A student is a person who has been enrolled in a school or other educational institution.</td>
+</tr>
+<tr>
+<td>StudentAcademicRecord</td>
+<td>This educational entity represents the cumulative record of academic achievement for a student.</td>
+</tr>
+<tr>
+<td>StudentCompetencyObjective</td>
+<td>This entity represents the competency assessed or evaluated for the student against a specific learning  objective.</td>
+</tr>
+<tr>
+<td>StudentGradebookEntry</td>
+<td>This entity holds a student&#39;s grade or competency level for a gradebook entry.</td>
+</tr>
+<tr>
+<td>StudentLearningObjective</td>
+<td>This entity represents the competency assessed or evaluated for the student against a specific LearningObjective.</td>
+</tr>
+<tr>
+<td>StudentProgramAssociation</td>
+<td>This association represents the Program(s) that a student participates in or is served by.</td>
+</tr>
+<tr>
+<td>StudentSectionAssociation</td>
+<td>This association indicates the course sections to which a student is assigned.</td>
+</tr>
+</tbody></table>
+<p><img src="/path/to/domain-model.png" alt="Student Academic Record Model Diagram"></p>
+<h4 id="student-academic-record-model">Student Academic Record Model</h4>
+</body><html>

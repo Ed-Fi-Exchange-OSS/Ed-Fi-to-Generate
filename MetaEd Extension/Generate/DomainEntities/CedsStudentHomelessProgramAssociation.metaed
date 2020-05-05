@@ -1,0 +1,24 @@
+Domain Entity CedsStudentHomelessProgramAssociation
+    documentation "This is documentation."
+    date BeginDate
+        documentation "This is documentation."
+        is part of identity
+    integer EducationOrganizationId
+      documentation ""
+      is part of identity
+    integer ProgramEducationOrganizationId
+      documentation ""
+      is part of identity
+    string CedsProgramName
+      documentation ""
+      is part of identity
+      max length 60
+    integer  ProgramTypeDescriptorId
+      documentation ""
+      is part of identity
+    integer  StudentUSI
+      documentation ""
+      is part of identity
+    bool HomelessServicedIndicator
+      documentation ""
+      is required

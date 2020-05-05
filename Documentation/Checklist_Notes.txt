@@ -1,0 +1,42 @@
+ToDo:
+[ODS].[OrganizationFederalAccountability] School_ReconstitutedStatus Done in encapsualted sp
+
+EdFi not issue
+CedsSchool.SharedTimeIndicatorDescriptorId no value
+NationalSchoolLunchProgramStatusDescriptorId
+
+Staging 
+LEA_SupervisoryUnionIdentificationNumber not populted
+
+HispanicLatinoEthnicity not polulated done
+Staff Sex missing done
+
+DD idsability not mapped to edfi need
+
+staging.disciline: DisciplinaryActionEndDate not populated: no need done
+
+
+DisciplineActionDiscipline
+IdeaInterimRemovalReasonDescriptorId removed from 3.1 no issue becasue an extension table added
+
+StaffAssignment staing: 
+SpecialEducationAgeGroupTaught no issue
+SpecialEducationRelatedServicesPersonnel no edfi entry
+
+SpecialEducationStaffCategory no populated
+
+
+//Done
+Staging PersonRace Staging change to by school year
+RecordStartDateTime
+RecordEndDateTime
+
+
+09/04/2019
+
+FS029
+FS035
+
+
+[Migrate_DimPersonnelStatuses]
+left outer join ods.RefK12StaffClassification classif on staff.RefK12StaffClassificationId = classif.RefEducationStaffClassificationId

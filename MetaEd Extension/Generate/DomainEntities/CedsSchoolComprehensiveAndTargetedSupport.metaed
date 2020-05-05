@@ -1,0 +1,14 @@
+Domain Entity CedsSchoolComprehensiveAndTargetedSupport
+    documentation "This is documentation for School Support and Improvement."
+    integer SchoolId
+        documentation "The identifier assigned to a school."
+        is part of identity
+    descriptor ComprehensiveAndTargetedSupport
+        documentation "The reason for identification for targeted support and improvement (TSI). "
+        is optional
+    descriptor ComprehensiveSupport
+        documentation "An indication the school is designated by the state as a comprehensive support and improvement (CSI) or targeted support and improvement (TSI) school."
+        is optional
+    descriptor TargetedSupport
+        documentation "The reasons for identification for comprehensive support and improvement (CSI)."
+        is optional

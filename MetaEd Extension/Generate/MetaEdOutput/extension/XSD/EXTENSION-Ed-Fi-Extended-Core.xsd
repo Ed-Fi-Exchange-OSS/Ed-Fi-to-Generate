@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- (c)2018 Ed-Fi Alliance, LLC. All Rights Reserved. -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://ed-fi.org/0200" xmlns:ann="http://ed-fi.org/annotation" targetNamespace="http://ed-fi.org/0200" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:include schemaLocation="Ed-Fi-Core.xsd" />
+  <xs:annotation>
+    <xs:documentation>===== Ed-Fi 2.0.1 Extensions =====</xs:documentation>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:documentation>===== Domain Entities =====</xs:documentation>
+  </xs:annotation>
+  <xs:complexType name="EXTENSION-CedsLocalEducationAgency">
+    <xs:annotation>
+      <xs:documentation>This entity extends LocalEducationAgency to contain elements necessary for loading Generate.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="CedsLocalEducationAgencyId" type="xs:int">
+            <xs:annotation>
+              <xs:documentation>The identifier assigned to a local education agency by the State Education Agency (SEA).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="LocalEducationAgencyType" type="EXTENSION-LocalEducationAgencyTypeDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The classification of education agencies within the geographic boundaries of a state according to the level of administrative and operational control.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>EXTENSION-LocalEducationAgencyTypeDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="LocalEducationAgencyReference" type="LocalEducationAgencyReferenceType">
+            <xs:annotation>
+              <xs:documentation>This entity maintains information about federal reporting and accountability for local education agencies.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-CedsSchool">
+    <xs:annotation>
+      <xs:documentation>This is an extension of edfi.School.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ComplexObjectType">
+        <xs:sequence>
+          <xs:element name="CedsSchoolId" type="xs:int">
+            <xs:annotation>
+              <xs:documentation>The identifier assigned to a local education agency by the State Education Agency (SEA).</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="NationalSchoolLunchProgramStatus" type="EXTENSION-NationalSchoolLunchProgramStatusDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The classification of participation by a school in the National School Lunch Program.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>EXTENSION-NationalSchoolLunchProgramStatusDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ReconstitutedStatus" type="EXTENSION-ReconstitutedStatusDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication that the school was restructured, transformed or otherwise changed as a consequence of the state's accountability system under ESEA or as a result of School Improvement Grants (SIG).</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>EXTENSION-ReconstitutedStatusDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SharedTimeIndicator" type="EXTENSION-SharedTimeIndicatorDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication that a school offers career and technical education or other educational services in which some or all students are enrolled at a separate school of record and attend the shared-time school on a part-time basis.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>EXTENSION-SharedTimeIndicatorDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="VirtualSchoolStatus" type="EXTENSION-VirtualSchoolStatusDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>An indication of the extent to which a public school offers instruction in which students and teachers are separated by time and/or location, and interaction occurs via computers and/or telecommunications technologies.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>EXTENSION-VirtualSchoolStatusDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-EducationOrganizationFederalFunding">
+    <xs:annotation>
+      <xs:documentation>This entity represents funding for the organization.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="EducationOrganization">
+        <xs:sequence>
+          <xs:element name="FederalProgramCode" type="EXTENSION-FederalProgramCode" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The Federal Program Code as defined in CEDS.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="FederalProgramsFundingAllocation" type="Currency" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The Federal Programs Funding Allocation as defined in CEDS.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="ParentalInvolvmementReservationFunds" type="Currency" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The Parent Involvement Reservation Funds as defined in CEDS.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-StudentExtension">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Domain Entity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="Student">
+        <xs:sequence>
+          <xs:element name="NationalSchoolLunchProgramDirectCertificationIndicator" type="EXTENSION-NationalSchoolLunchProgramDirectCertificationIndicatorDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Indicates that the student's National School Lunch Program (NSLP) eligibility has been determined through direct certification.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>EXTENSION-NationalSchoolLunchProgramDirectCertificationIndicatorDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:annotation>
+    <xs:documentation>===== Descriptors =====</xs:documentation>
+  </xs:annotation>
+  <xs:complexType name="EXTENSION-BehaviorTypeDescriptor">
+    <xs:annotation>
+      <xs:documentation>An extension of the Behavior Type.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-DisciplineTypeDescriptor">
+    <xs:annotation>
+      <xs:documentation>An extension of the Discipline Type.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-LocalEducationAgencyTypeDescriptor">
+    <xs:annotation>
+      <xs:documentation>This is the Local Education Agency Type as defined in CEDS.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-MigrantEducationProgramEnrollmentTypeDescriptor">
+    <xs:annotation>
+      <xs:documentation>This is the Migrant Education Program Enrollment Type as defined in CEDS.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-MigrantEducationProgramServicesTypeDescriptor">
+    <xs:annotation>
+      <xs:documentation>This is the Migrant Education Program Services Type as defined in CEDS.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-NationalSchoolLunchProgramDirectCertificationIndicatorDescriptor">
+    <xs:annotation>
+      <xs:documentation>This is the National School Lunch Program Direct Certification Indicator as defined in CEDS.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-NationalSchoolLunchProgramStatusDescriptor">
+    <xs:annotation>
+      <xs:documentation>This is the National School Lunch Program Status as defined in CEDS.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-ReconstitutedStatusDescriptor">
+    <xs:annotation>
+      <xs:documentation>This is the ReconstitutedStatus of a school as defined in CEDS.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-SharedTimeIndicatorDescriptor">
+    <xs:annotation>
+      <xs:documentation>This is the School Shared Time Indicator as defined in CEDS.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-SpecialEducationAgeGroupTaughtDescriptor">
+    <xs:annotation>
+      <xs:documentation>This is the Special Education Age Group Taught as defined in CEDS.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-SpecialEducationSupportServicesCategoryDescriptor">
+    <xs:annotation>
+      <xs:documentation>This is the Special Education Support Services Category as defined in CEDS.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-TitleIProgramStaffCategoryDescriptor">
+    <xs:annotation>
+      <xs:documentation>This is the Title I Program Staff Category as defined in CEDS.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-VirtualSchoolStatusDescriptor">
+    <xs:annotation>
+      <xs:documentation>This Virtual School Status as defined in CEDS.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Descriptor</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:annotation>
+    <xs:documentation>===== Associations =====</xs:documentation>
+  </xs:annotation>
+  <xs:complexType name="EXTENSION-CedsStudentMigrantEducationProgramAssociation">
+    <xs:annotation>
+      <xs:documentation>This entity extends the StudentMigrantEducationProgramAssociation to provide additional elements needed for the population of Generate.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Association</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="StudentProgramAssociation">
+        <xs:sequence>
+          <xs:element name="MigrantEducationProgramEnrollmentType" type="EXTENSION-MigrantEducationProgramEnrollmentTypeDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The type of school/migrant education program in which instruction and/or support services are provided.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>EXTENSION-MigrantEducationProgramEnrollmentTypeDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="MigrantEducationProgramServicesType" type="EXTENSION-MigrantEducationProgramServicesTypeDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The type of services received by participating migrant students in the migrant education program (MEP).</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>EXTENSION-MigrantEducationProgramServicesTypeDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="MigrantStudentQualifyingArrivalDate" type="xs:date" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The qualifying arrival date (QAD) is the month, date, and year that the child completed a move with his or her parent to enable the parent to find qualifying employment. In some cases, the child and worker may not always move together, in which case the QAD would be the date that the child joins the worker who has already moved, or the date the worker joins the child who has already moved. The QAD is the date the child's eligibility for the Migrant Education Program begins.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-StaffEducationOrganizationAssignmentAssociationExtension">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Association</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="StaffEducationOrganizationAssignmentAssociation">
+        <xs:sequence>
+          <xs:element name="SpecialEducationAgeGroupTaught" type="EXTENSION-SpecialEducationAgeGroupTaughtDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The Special Education Age Group Taught as defined in CEDS.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>EXTENSION-SpecialEducationAgeGroupTaughtDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="SpecialEducationSupportServicesCategory" type="EXTENSION-SpecialEducationSupportServicesCategoryDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The Special Education Support Services Category as defined in CEDS.</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>EXTENSION-SpecialEducationSupportServicesCategoryDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="TitleIProgramStaffCategory" type="EXTENSION-TitleIProgramStaffCategoryDescriptorReferenceType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>The Title I Program Staff Category as defined in CEDS</xs:documentation>
+              <xs:appinfo>
+                <ann:Descriptor>EXTENSION-TitleIProgramStaffCategoryDescriptor</ann:Descriptor>
+              </xs:appinfo>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:annotation>
+    <xs:documentation>===== Extended Reference Types =====</xs:documentation>
+  </xs:annotation>
+  <xs:complexType name="EXTENSION-CedsLocalEducationAgencyIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of a CedsLocalEducationAgency.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CedsLocalEducationAgencyId" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>The identifier assigned to a local education agency by the State Education Agency (SEA).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-CedsLocalEducationAgencyReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a CedsLocalEducationAgency. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="CedsLocalEducationAgencyIdentity" type="EXTENSION-CedsLocalEducationAgencyIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of a CedsLocalEducationAgency.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-CedsSchoolIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of a CedsSchool.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="CedsSchoolId" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>The identifier assigned to a local education agency by the State Education Agency (SEA).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-CedsSchoolReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a CedsSchool. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="CedsSchoolIdentity" type="EXTENSION-CedsSchoolIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of a CedsSchool.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-CedsStudentMigrantEducationProgramAssociationIdentityType">
+    <xs:annotation>
+      <xs:documentation>Identity of a CedsStudentMigrantEducationProgramAssociation.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="StudentReference" type="StudentReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Student associated with the Program.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="ProgramReference" type="ProgramReferenceType">
+        <xs:annotation>
+          <xs:documentation>The Program associated with the Student.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="BeginDate" type="xs:date">
+        <xs:annotation>
+          <xs:documentation>The month, day, and year on which the Student first received services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="EducationOrganizationReference" type="EducationOrganizationReferenceType">
+        <xs:annotation>
+          <xs:documentation>The EducationOrganization where the Student is participating in or receiving the Program services.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-CedsStudentMigrantEducationProgramAssociationReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for a CedsStudentMigrantEducationProgramAssociation. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="CedsStudentMigrantEducationProgramAssociationIdentity" type="EXTENSION-CedsStudentMigrantEducationProgramAssociationIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Identity of a CedsStudentMigrantEducationProgramAssociation.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-EducationOrganizationFederalFundingIdentityType">
+    <xs:annotation>
+      <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of an EducationOrganizationFederalFunding.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Identity</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="EducationOrganizationId" type="xs:int">
+        <xs:annotation>
+          <xs:documentation>The identifier assigned to an education agency by the State Education Agency (SEA).  Also known as the State LEA ID.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-EducationOrganizationFederalFundingReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides alternative references for an EducationOrganizationFederalFunding. Use XML IDREF to reference a record that is included in the interchange. Use the identity type to look up a record that was loaded previously.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ReferenceType">
+        <xs:sequence>
+          <xs:element name="EducationOrganizationFederalFundingIdentity" type="EXTENSION-EducationOrganizationFederalFundingIdentityType" minOccurs="0">
+            <xs:annotation>
+              <xs:documentation>Encapsulates primary attributes that can be used to look up the identity of an EducationOrganizationFederalFunding.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:annotation>
+    <xs:documentation>===== Extended Descriptor Reference Types =====</xs:documentation>
+  </xs:annotation>
+  <xs:complexType name="EXTENSION-BehaviorTypeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for behavior type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-DisciplineTypeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for discipline type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-LocalEducationAgencyTypeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for local education agency type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-MigrantEducationProgramEnrollmentTypeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for migrant education program enrollment type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-MigrantEducationProgramServicesTypeDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for migrant education program services type descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-NationalSchoolLunchProgramDirectCertificationIndicatorDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for national school lunch program direct certification indicator descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-NationalSchoolLunchProgramStatusDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for national school lunch program status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-ReconstitutedStatusDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for reconstituted status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-SharedTimeIndicatorDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for shared time indicator descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-SpecialEducationAgeGroupTaughtDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for special education age group taught descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-SpecialEducationSupportServicesCategoryDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for special education support services category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-TitleIProgramStaffCategoryDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for title i program staff category descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:complexType name="EXTENSION-VirtualSchoolStatusDescriptorReferenceType">
+    <xs:annotation>
+      <xs:documentation>Provides references for virtual school status descriptor and its details during interchange. Use XML IDREF to reference a record that is included in the interchange.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Extended Descriptor Reference</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="DescriptorReferenceType" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:annotation>
+    <xs:documentation>===== Common Types =====</xs:documentation>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:documentation>===== Enumerations and Enumerated Collections =====</xs:documentation>
+  </xs:annotation>
+  <xs:annotation>
+    <xs:documentation>===== String Simple Types =====</xs:documentation>
+  </xs:annotation>
+  <xs:simpleType name="EXTENSION-FederalProgramCode">
+    <xs:annotation>
+      <xs:documentation>The Federal Program Code as defined in CEDS.</xs:documentation>
+      <xs:appinfo>
+        <ann:TypeGroup>Simple</ann:TypeGroup>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="10" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:annotation>
+    <xs:documentation>===== Numeric Simple Types =====</xs:documentation>
+  </xs:annotation>
+</xs:schema>

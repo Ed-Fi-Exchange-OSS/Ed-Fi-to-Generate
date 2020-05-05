@@ -1,0 +1,94 @@
+<!DOCTYPE html><html><head><title>MetaEd Generated Interchange Brief</title><link rel="stylesheet" href="confluence-like.css"></head><body><h1 id="assessment">Assessment</h1>
+<hr>
+<p>This domain defines a model that can be used for a wide variety of assessments, including early childhood assessment, state standardized assessments, college entrance exams, benchmark assessments, and/or course assessments. This domain contains:</p>
+<ul>
+<li>Learning Standards that drive the curriculum and the assessments</li>
+<li>Assessment Metadata that describe the assessment</li>
+<li>Student Assessment Results that follow a parallel structure of StudentAssessment, StudentObjectiveAssessment, and StudentAssessmentItem</li>
+</ul>
+<h2 id="learning-standards">Learning Standards</h2>
+<p>Many states have standard learning standards that drive the curriculum and the assessments. The Common Core State Standards Initiative(<a href="http://www.corestandards.org">www.corestandards.org</a>) is a national initiative for standards in this area. For states that use the Common Core, or have their own standards, the assessment model has entities for LearningStandard, which represents the lowest level of skills, and LearningObjective, which represents higher level aggregation of skills, as shown below. The model supports a hierarchical taxonomy of learning skills using multiple levels of LearningObjective, which may correspond to levels of subjects, domains, or strands; the Nomenclature attribute captures the appropriate naming of these levels whereas the SuccessCriteria attribute captures the criterion that teacher and studentsuse to check for attainment of the objective.</p>
+<p>LearningStandard may also be hierarchically organized to support the usecase that adopters of the Common Core often decompose a standard into lower level standards in their curriculum. The HasAssociatedPrerequisite association captures prerequisites for a LearningStandard as would be specified in a learning map.</p>
+<p><img src="/path/to/subdomain-model.png" alt="Assessment, Learning Standards Model Diagram"><br><strong>Assessment, Learning Standards Model</strong></p>
+<h2 id="assessment-metadata">Assessment Metadata</h2>
+<p>Assessment metadata is information describing the assessment. The model reflects four levels of definition, designed to  accommodate a wide variety of assessment reporting, as follows:</p>
+<ul>
+<li>The AssessmentFamily is the optional identification for a family of tests. For example, a family of statewide tests might be identified for a set of subject assessments at various grade levels. If required, AssessmentFamilies may be hierarchically organized. Semantically, characteristics of an AssessmentFamily are &quot;inherited&quot; by the individual Assessments.</li>
+<li>There are two options to associate an Assessment which are mutually exclusive: by Section and by Program. For example, if an Assessment is defined to assess Common Core Standards, then the association shall be with Section, on the other hand if the Assessment is defined to assess the Developmental Domains by an Early Learning program, then the association shall be with Program.</li>
+</ul>
+<p><img src="/path/to/subdomain-model.png" alt="Assessment, Assessment Metadata Model Diagram"><br><strong>Assessment, Assessment Metadata Model</strong></p>
+<h2 id="student-assessment">Student Assessment</h2>
+<p>Assessment represents a specific administration of an assessment. The Assessment entity contains the minimum amount of metadata required for an assessment.</p>
+<ul>
+<li>If the Assessment is associated with one or more sections, an association is made to the section(s).</li>
+<li>ObjectiveAssessment is the optional identification of portions of the assessment that test specific learning objectives. If required, there can be multiple levels of hierarchical ObjectiveAssessments.</li>
+<li>The AssessmentItem supports the optional identification of the individual questions or items on a test to be scored. Typically,the identification of AssessmentItems is done in conjunction with their mapping to LearningStandards.</li>
+<li>If the assessment references the common core or other state standards for LearningStandards and LearningObjectives, then the assessment metadata would reference the preloaded standards. If the assessment references its own set of LearningObjectives and/or LearningStandards, then that data would be loaded as assessment metadata. An ObjectiveAssessment may test one or more LearningObjectives, and/or may test one or more LearningStandards.</li>
+</ul>
+<p>The student&#39;s assessment results follow a similar structure to the assessment metadata.</p>
+<ul>
+<li>StudentAssessment holds the overall assessment score and other information about a specific student&#39;s results for a specific assessment.The StudentAssessment is associated with a specific student.</li>
+<li>StudentObjectiveAssessment optionally holds the student&#39;s score for individually scored results for a specific LearningObjective. If the assessment metadata includes ObjectiveAssessments, then there would be corresponding StudentObjectiveAssessments for each student.</li>
+<li>StudentAssessmentItem optionally holds the student&#39;s score forindividual AssessmentItems. If the assessment metadata includesAssessmentItems, then there would be corresponding StudentAssessmentItems for each student.</li>
+</ul>
+<p><img src="/path/to/subdomain-model.png" alt="Assessment, Student Assessment Model Diagram"><br><strong>Assessment, Student Assessment Model</strong></p>
+<h4 id="assessment-model-entities">Assessment Model Entities</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Assessment</td>
+<td>This entity represents a tool, instrument, process, or exhibition composed of a systematic sampling of behavior for measuring a student&#39;s competence, knowledge,skills, or behavior. An assessment can be used to measure differences inindividuals or groups and changes in performance from one occasion to the next.</td>
+</tr>
+<tr>
+<td>AssessmentFamily</td>
+<td>This entity represents a logical grouping or association of assessments that share a common purpose, heritage or content standard. There may be hierarchiesof assessment families, characteristics (e.g., Academic Subject) specified for assessment families, by convention, are inherited by the Assessments associated with the AssessmentFamily.</td>
+</tr>
+<tr>
+<td>AssessmentItem</td>
+<td>This entity represents one of many single measures that make up an assessment.</td>
+</tr>
+<tr>
+<td>LearningObjective</td>
+<td>This entity represents identified learning objectives for courses in specific grades.</td>
+</tr>
+<tr>
+<td>LearningStandard</td>
+<td>This entity is a sub-element of a learning objective consisting of a precise statement of the expectation of a student&#39;s proficiency.</td>
+</tr>
+<tr>
+<td>ObjectiveAssessment</td>
+<td>This entity represents subtests that assess specific learning objectives.</td>
+</tr>
+<tr>
+<td>Program</td>
+<td>This entity represents any program designed to work in conjunction with, or as a supplement to, the main academic program. Programs may provide instruction, training, services, or benefits through federal, state, or local agencies. Programs may also include organized extracurricular activities for students.</td>
+</tr>
+<tr>
+<td>Section</td>
+<td>This entity represents a setting in which organized instruction of course content is provided, in-person or otherwise, to one or more students for a given period of time. A course offering may be offered to more than one section.</td>
+</tr>
+<tr>
+<td>Student</td>
+<td>This entity represents an individual for whom instruction, services, and/or care are provided in an early childhood, elementary, or secondary educational program under the jurisdiction of a school, education agency or other institution or program. A student is a person who has been enrolled in a school or other educational institution.</td>
+</tr>
+<tr>
+<td>StudentAssessment</td>
+<td>This entity represents the analysis or scoring of a student&#39;s response on an assessment. The analysis results in a value that represents a student&#39;s performance on a set of items on a test.</td>
+</tr>
+<tr>
+<td>StudentAssessmentItem</td>
+<td>This entity represents the student&#39;s response to an assessment item and the item-level scores such as correct, incorrect, or met standard.</td>
+</tr>
+<tr>
+<td>StudentObjectiveAssessment</td>
+<td>This entity holds the score and or performance levels earned for an ObjectiveAssessment by a student.</td>
+</tr>
+</tbody></table>
+<p><img src="/path/to/domain-model.png" alt="Assessment Model Diagram"></p>
+<h4 id="assessment-model">Assessment Model</h4>
+</body><html>

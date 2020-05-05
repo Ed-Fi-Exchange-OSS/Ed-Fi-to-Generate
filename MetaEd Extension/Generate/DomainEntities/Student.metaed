@@ -1,0 +1,4 @@
+Domain Entity Student additions
+    descriptor NationalSchoolLunchProgramDirectCertificationIndicator
+        documentation "Indicates that the student's National School Lunch Program (NSLP) eligibility has been determined through direct certification."
+        is optional

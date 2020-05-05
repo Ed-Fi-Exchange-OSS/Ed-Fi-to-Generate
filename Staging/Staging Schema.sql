@@ -1,0 +1,11 @@
+USE [generate]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'Staging')
+BEGIN
+	EXEC sp_executesql N'CREATE SCHEMA Staging'
+END

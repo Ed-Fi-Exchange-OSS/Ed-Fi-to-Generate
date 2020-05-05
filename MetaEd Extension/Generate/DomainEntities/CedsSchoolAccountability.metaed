@@ -1,0 +1,12 @@
+Domain Entity CedsSchoolAccountability
+documentation "This is an extension of edfi.School Accountability"
+integer SchoolId
+    documentation "The identifier assigned to a local education agency by the State Education Agency (SEA)."
+    is part of identity
+    is queryable field
+integer SchoolYear
+    documentation "The School Year"
+    is required
+descriptor GunFreeSchoolsActReportingStatus
+    documentation "An indication of whether the school or local education agency (LEA) submitted a Gun-Free Schools Act (GFSA) of 1994 report to the state, as defined by Title 18, Section 921."
+    is optional

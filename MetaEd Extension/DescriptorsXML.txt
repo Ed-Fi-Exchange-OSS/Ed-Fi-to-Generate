@@ -1,0 +1,1146 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <InterchangeDescriptors xmlns="http://ed-fi.org/0220" xmlns:ann="http://ed-fi.org/annotation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ed-fi.org/0220 C:/Projects/DLP-EdFiTeam/Ed-Fi-Standard/v2.0/Schemas/Interchange-Descriptors.xsd">
+  	<LocalEducationAgencyType>
+  		<CodeValue>RegularNotInSupervisoryUnion</CodeValue>
+  		<ShortDescription>RegularNotInSupervisoryUnion</ShortDescription>
+  		<Description>Regular public school district that is NOT a component of a supervisory union</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000537</Namespace>
+  	</LocalEducationAgencyType>
+  	<LocalEducationAgencyType>
+  		<CodeValue>RegularSupervisoryUnion</CodeValue>
+  		<ShortDescription>RegularSupervisoryUnion</ShortDescription>
+  		<Description>Regular public school district that is a component of a supervisory union</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000537</Namespace>
+  	</LocalEducationAgencyType>
+  	<LocalEducationAgencyType>
+  		<CodeValue>SupervisoryUnion</CodeValue>
+  		<ShortDescription>SupervisoryUnion</ShortDescription>
+  		<Description>Supervisory Union</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000537</Namespace>
+  	</LocalEducationAgencyType>
+  	<LocalEducationAgencyType>
+  		<CodeValue>SpecializedPublicSchoolDistrict</CodeValue>
+  		<ShortDescription>SpecializedPublicSchoolDistrict</ShortDescription>
+  		<Description>Specialized Public School District</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000537</Namespace>
+  	</LocalEducationAgencyType>
+  	<LocalEducationAgencyType>
+  		<CodeValue>ServiceAgency</CodeValue>
+  		<ShortDescription>ServiceAgency</ShortDescription>
+  		<Description>Service Agency</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000537</Namespace>
+  	</LocalEducationAgencyType>
+  	<LocalEducationAgencyType>
+  		<CodeValue>StateOperatedAgency</CodeValue>
+  		<ShortDescription>StateOperatedAgency</ShortDescription>
+  		<Description>State Operated Agency</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000537</Namespace>
+  	</LocalEducationAgencyType>
+  	<LocalEducationAgencyType>
+  		<CodeValue>FederalOperatedAgency</CodeValue>
+  		<ShortDescription>FederalOperatedAgency</ShortDescription>
+  		<Description>Federal Operated Agency</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000537</Namespace>
+  	</LocalEducationAgencyType>
+  	<LocalEducationAgencyType>
+  		<CodeValue>Other</CodeValue>
+  		<ShortDescription>Other</ShortDescription>
+  		<Description>Other Local Education Agencies</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000537</Namespace>
+  	</LocalEducationAgencyType>
+  	<MigrantEducationProgramEnrollmentType>
+  		<CodeValue>01</CodeValue>
+  		<ShortDescription>01</ShortDescription>
+  		<Description>Basic School Program</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000437</Namespace>
+  	</MigrantEducationProgramEnrollmentType>
+  	<MigrantEducationProgramEnrollmentType>
+  		<CodeValue>02</CodeValue>
+  		<ShortDescription>02</ShortDescription>
+  		<Description>Regular Term MEP-Funded Project</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000437</Namespace>
+  	</MigrantEducationProgramEnrollmentType>
+  	<MigrantEducationProgramEnrollmentType>
+  		<CodeValue>03</CodeValue>
+  		<ShortDescription>03</ShortDescription>
+  		<Description>Summer/Intersession MEP-Funded Project</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000437</Namespace>
+  	</MigrantEducationProgramEnrollmentType>
+  	<MigrantEducationProgramEnrollmentType>
+  		<CodeValue>04</CodeValue>
+  		<ShortDescription>04</ShortDescription>
+  		<Description>Year Round MEP-Funded Project</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000437</Namespace>
+  	</MigrantEducationProgramEnrollmentType>
+  	<MigrantEducationProgramEnrollmentType>
+  		<CodeValue>05</CodeValue>
+  		<ShortDescription>05</ShortDescription>
+  		<Description>Basic School Program and Regular-Term MEP-Funded Project</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000437</Namespace>
+  	</MigrantEducationProgramEnrollmentType>
+  	<MigrantEducationProgramEnrollmentType>
+  		<CodeValue>06</CodeValue>
+  		<ShortDescription>06</ShortDescription>
+  		<Description>Residency Only (none of the above)</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000437</Namespace>
+  	</MigrantEducationProgramEnrollmentType>
+  	<MigrantEducationProgramServicesType>
+  		<CodeValue>CounselingServices</CodeValue>
+  		<ShortDescription></ShortDescription>
+  		<Description>Counseling Services</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000186</Namespace>
+  	</MigrantEducationProgramServicesType>
+  	<MigrantEducationProgramServicesType>
+  		<CodeValue>HighSchoolAccrual</CodeValue>
+  		<ShortDescription>HighSchoolAccrual</ShortDescription>
+  		<Description>High School Accrual</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000186</Namespace>
+  	</MigrantEducationProgramServicesType>
+  	<MigrantEducationProgramServicesType>
+  		<CodeValue>InstructionalServices</CodeValue>
+  		<ShortDescription>InstructionalServices</ShortDescription>
+  		<Description>Instructional Services</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000186</Namespace>
+  	</MigrantEducationProgramServicesType>
+  	<MigrantEducationProgramServicesType>
+  		<CodeValue>MathematicsInstruction</CodeValue>
+  		<ShortDescription>MathematicsInstruction</ShortDescription>
+  		<Description>Mathematics Instruction</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000186</Namespace>
+  	</MigrantEducationProgramServicesType>
+  	<MigrantEducationProgramServicesType>
+  		<CodeValue>ReadingInstruction</CodeValue>
+  		<ShortDescription>ReadingInstruction</ShortDescription>
+  		<Description>Reading Instruction</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000186</Namespace>
+  	</MigrantEducationProgramServicesType>
+  	<MigrantEducationProgramServicesType>
+  		<CodeValue>ReferralServices</CodeValue>
+  		<ShortDescription>ReferralServices</ShortDescription>
+  		<Description>Referral Services</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000186</Namespace>
+  	</MigrantEducationProgramServicesType>
+  	<MigrantEducationProgramServicesType>
+  		<CodeValue>SupportServices</CodeValue>
+  		<ShortDescription>SupportServices</ShortDescription>
+  		<Description>Support Services</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000186</Namespace>
+  	</MigrantEducationProgramServicesType>
+  	<NationalSchoolLunchProgramDirectCertificationIndicator>
+  		<CodeValue>Yes</CodeValue>
+  		<ShortDescription>Yes</ShortDescription>
+  		<Description>Yes</Description>
+ 		<Namespace>https://ceds.ed.gov/element/001654</Namespace>
+  	</NationalSchoolLunchProgramDirectCertificationIndicator>
+  	<NationalSchoolLunchProgramDirectCertificationIndicator>
+  		<CodeValue>No</CodeValue>
+  		<ShortDescription>No</ShortDescription>
+  		<Description>No</Description>
+ 		<Namespace>https://ceds.ed.gov/element/001654</Namespace>
+  	</NationalSchoolLunchProgramDirectCertificationIndicator>
+  	<NationalSchoolLunchProgramStatus>
+  		<CodeValue>NSLPCEO</CodeValue>
+  		<ShortDescription>NSLPCEO</ShortDescription>
+  		<Description>Community Eligibility Option</Description>
+ 		<Namespace>https://ceds.ed.gov/element/001767</Namespace>
+  	</NationalSchoolLunchProgramStatus>
+  	<NationalSchoolLunchProgramStatus>
+  		<CodeValue>NSLPNO</CodeValue>
+  		<ShortDescription>NSLPNO</ShortDescription>
+  		<Description>Not Participating</Description>
+ 		<Namespace>https://ceds.ed.gov/element/001767</Namespace>
+  	</NationalSchoolLunchProgramStatus>
+  	<NationalSchoolLunchProgramStatus>
+  		<CodeValue>NSLPWOPRO</CodeValue>
+  		<ShortDescription>NSLPWOPRO</ShortDescription>
+  		<Description>Participating Without Provision or Community Eligibility Option</Description>
+ 		<Namespace>https://ceds.ed.gov/element/001767</Namespace>
+  	</NationalSchoolLunchProgramStatus>
+  	<NationalSchoolLunchProgramStatus>
+  		<CodeValue>NSLPPRO1</CodeValue>
+  		<ShortDescription>NSLPPRO1</ShortDescription>
+  		<Description>Provision 1</Description>
+ 		<Namespace>https://ceds.ed.gov/element/001767</Namespace>
+  	</NationalSchoolLunchProgramStatus>
+  	<NationalSchoolLunchProgramStatus>
+  		<CodeValue>NSLPPRO2</CodeValue>
+  		<ShortDescription>NSLPPRO2</ShortDescription>
+  		<Description>Provision 2</Description>
+ 		<Namespace>https://ceds.ed.gov/element/001767</Namespace>
+  	</NationalSchoolLunchProgramStatus>
+  	<NationalSchoolLunchProgramStatus>
+  		<CodeValue>NSLPPRO3</CodeValue>
+  		<ShortDescription>NSLPPRO3</ShortDescription>
+  		<Description>Provision 3</Description>
+ 		<Namespace>https://ceds.ed.gov/element/001767</Namespace>
+  	</NationalSchoolLunchProgramStatus>
+  	<ReconstitutedStatus>
+  		<CodeValue>Yes</CodeValue>
+  		<ShortDescription>Yes</ShortDescription>
+  		<Description>Reconstituted School</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000230</Namespace>
+  	</ReconstitutedStatus>
+  	<ReconstitutedStatus>
+  		<CodeValue>No</CodeValue>
+  		<ShortDescription>No</ShortDescription>
+  		<Description>Not a reconstituted school</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000230</Namespace>
+  	</ReconstitutedStatus>
+  	<SharedTimeIndicator>
+  		<CodeValue>Yes</CodeValue>
+  		<ShortDescription>Yes</ShortDescription>
+  		<Description>Yes</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000257</Namespace>
+  	</SharedTimeIndicator>
+  	<SharedTimeIndicator>
+  		<CodeValue>No</CodeValue>
+  		<ShortDescription>No</ShortDescription>
+  		<Description>No</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000257</Namespace>
+  	</SharedTimeIndicator>
+  	<SpecialEducationAgeGroupTaught>
+  		<CodeValue>3TO5</CodeValue>
+  		<ShortDescription>3TO5</ShortDescription>
+  		<Description>3 through 5</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000564</Namespace>
+  	</SpecialEducationAgeGroupTaught>
+  	<SpecialEducationAgeGroupTaught>
+  		<CodeValue>6TO21</CodeValue>
+  		<ShortDescription>6TO21</ShortDescription>
+  		<Description>6 through 21</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000564</Namespace>
+  	</SpecialEducationAgeGroupTaught>
+  	<SpecialEducationSupportServicesCategory>
+  		<CodeValue>PSYCH</CodeValue>
+  		<ShortDescription>PSYCH</ShortDescription>
+  		<Description>Psychologists</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000558</Namespace>
+  	</SpecialEducationSupportServicesCategory>
+  	<SpecialEducationSupportServicesCategory>
+  		<CodeValue>SOCIALWORK</CodeValue>
+  		<ShortDescription>SOCIALWORK</ShortDescription>
+  		<Description>Social Workers</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000558</Namespace>
+  	</SpecialEducationSupportServicesCategory>
+  	<SpecialEducationSupportServicesCategory>
+  		<CodeValue>OCCTHERAP</CodeValue>
+  		<ShortDescription>OCCTHERAP</ShortDescription>
+  		<Description>Occupational Therapists</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000558</Namespace>
+  	</SpecialEducationSupportServicesCategory>
+  	<SpecialEducationSupportServicesCategory>
+  		<CodeValue>AUDIO</CodeValue>
+  		<ShortDescription>AUDIO</ShortDescription>
+  		<Description>Audiologists</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000558</Namespace>
+  	</SpecialEducationSupportServicesCategory>
+  	<SpecialEducationSupportServicesCategory>
+  		<CodeValue>PEANDREC</CodeValue>
+  		<ShortDescription>PEANDREC</ShortDescription>
+  		<Description>Physical Education Teachers and Recreation and Therapeutic Recreation Specialists</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000558</Namespace>
+  	</SpecialEducationSupportServicesCategory>
+  	<SpecialEducationSupportServicesCategory>
+  		<CodeValue>PHYSTHERAP</CodeValue>
+  		<ShortDescription>PHYSTHERAP</ShortDescription>
+  		<Description>Physical Therapists</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000558</Namespace>
+  	</SpecialEducationSupportServicesCategory>
+  	<SpecialEducationSupportServicesCategory>
+  		<CodeValue>SPEECHPATH</CodeValue>
+  		<ShortDescription>SPEECHPATH</ShortDescription>
+  		<Description>Speech-Language Pathologists</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000558</Namespace>
+  	</SpecialEducationSupportServicesCategory>
+  	<SpecialEducationSupportServicesCategory>
+  		<CodeValue>INTERPRET</CodeValue>
+  		<ShortDescription>INTERPRET</ShortDescription>
+  		<Description>Interpreters</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000558</Namespace>
+  	</SpecialEducationSupportServicesCategory>
+  	<SpecialEducationSupportServicesCategory>
+  		<CodeValue>COUNSELOR</CodeValue>
+  		<ShortDescription>COUNSELOR</ShortDescription>
+  		<Description>Counselors and Rehabilitation Counselors</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000558</Namespace>
+  	</SpecialEducationSupportServicesCategory>
+  	<SpecialEducationSupportServicesCategory>
+  		<CodeValue>ORIENTMOBIL</CodeValue>
+  		<ShortDescription>ORIENTMOBIL</ShortDescription>
+  		<Description>Orientation and Mobility Specialists</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000558</Namespace>
+  	</SpecialEducationSupportServicesCategory>
+  	<SpecialEducationSupportServicesCategory>
+  		<CodeValue>MEDNURSE</CodeValue>
+  		<ShortDescription>MEDNURSE</ShortDescription>
+  		<Description>Medical/Nursing Service Staff</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000558</Namespace>
+  	</SpecialEducationSupportServicesCategory>
+  	<TitleIProgramStaffCategory>
+  		<CodeValue>TitleITeacher</CodeValue>
+  		<ShortDescription>TitleITeacher</ShortDescription>
+  		<Description>Title I Teachers</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000283</Namespace>
+  	</TitleIProgramStaffCategory>
+  	<TitleIProgramStaffCategory>
+  		<CodeValue>TitleIParaprofessional</CodeValue>
+  		<ShortDescription>TitleIParaprofessional</ShortDescription>
+  		<Description>Title I Paraprofessionals</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000283</Namespace>
+  	</TitleIProgramStaffCategory>
+  	<TitleIProgramStaffCategory>
+  		<CodeValue>TitleISupportStaff</CodeValue>
+  		<ShortDescription>TitleISupportStaff</ShortDescription>
+  		<Description>Title I Clerical Support Staff</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000283</Namespace>
+  	</TitleIProgramStaffCategory>
+  	<TitleIProgramStaffCategory>
+  		<CodeValue>TitleIAdministrator</CodeValue>
+  		<ShortDescription>TitleIAdministrator</ShortDescription>
+  		<Description>Title I Administrators (non-clerical)</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000283</Namespace>
+  	</TitleIProgramStaffCategory>
+  	<TitleIProgramStaffCategory>
+  		<CodeValue>TitleIOtherParaprofessional</CodeValue>
+  		<ShortDescription>TitleIOtherParaprofessional</ShortDescription>
+  		<Description>Title I Other Paraprofessionals</Description>
+ 		<Namespace>https://ceds.ed.gov/element/000283</Namespace>
+  	</TitleIProgramStaffCategory>
+  	<VirtualSchoolStatus>
+  		<CodeValue>FaceVirtual</CodeValue>
+  		<ShortDescription>FaceVirtual</ShortDescription>
+  		<Description>The school focuses on a systematic program of virtual instruction but includes some physical meetings among students or with teachers.</Description>
+ 		<Namespace>https://ceds.ed.gov/element/001766</Namespace>
+  	</VirtualSchoolStatus>
+  	<VirtualSchoolStatus>
+  		<CodeValue>FullVirtual</CodeValue>
+  		<ShortDescription>FullVirtual</ShortDescription>
+  		<Description>The school has no physical building where students meet with each other or with teachers and all instruction is virtual.</Description>
+ 		<Namespace>https://ceds.ed.gov/element/001766</Namespace>
+  	</VirtualSchoolStatus>
+  	<VirtualSchoolStatus>
+  		<CodeValue>NotVirtual</CodeValue>
+  		<ShortDescription>NotVirtual</ShortDescription>
+  		<Description>The school does not offer any virtual instruction.</Description>
+ 		<Namespace>https://ceds.ed.gov/element/001766</Namespace>
+  	</VirtualSchoolStatus>
+  	<VirtualSchoolStatus>
+  		<CodeValue>SupplementalVirtual</CodeValue>
+  		<ShortDescription>SupplementalVirtual</ShortDescription>
+  		<Description>The school offers virtual courses but virtual instruction is not the primary means of instruction.</Description>
+ 		<Namespace>https://ceds.ed.gov/element/001766</Namespace>
+  	</VirtualSchoolStatus>
+  	<BehaviorType>
+  		<CodeValue>DrugRelated</CodeValue>
+  		<ShortDescription>DrugRelated</ShortDescription>
+  		<Description>Illicit drug related</Description>
+ 		<Namespace>http://www.ed-fi.org/Descriptor/BehaviorDescriptor.xml</Namespace>
+  	</BehaviorType>
+  	<BehaviorType>
+  		<CodeValue>AlcoholRelated</CodeValue>
+  		<ShortDescription>AlcoholRelated</ShortDescription>
+  		<Description>Alcohol related</Description>
+ 		<Namespace>http://www.ed-fi.org/Descriptor/BehaviorDescriptor.xml</Namespace>
+  	</BehaviorType>
+  	<BehaviorType>
+  		<CodeValue>WeaponsPosession</CodeValue>
+  		<ShortDescription>WeaponsPosession</ShortDescription>
+  		<Description>Weapons possesion</Description>
+ 		<Namespace>http://www.ed-fi.org/Descriptor/BehaviorDescriptor.xml</Namespace>
+  	</BehaviorType>
+  	<BehaviorType>
+  		<CodeValue>WithPhysicalInjury</CodeValue>
+  		<ShortDescription>WithPhysicalInjury</ShortDescription>
+  		<Description>Violent Incident (with Physical Injury)</Description>
+ 		<Namespace>http://www.ed-fi.org/Descriptor/BehaviorDescriptor.xml</Namespace>
+  	</BehaviorType>
+  	<BehaviorType>
+  		<CodeValue>WithoutPhysicalInjury</CodeValue>
+  		<ShortDescription>WithoutPhysicalInjury</ShortDescription>
+  		<Description>Violent Incident (without Physical Injury)</Description>
+ 		<Namespace>http://www.ed-fi.org/Descriptor/BehaviorDescriptor.xml</Namespace>
+  	</BehaviorType>
+  	<DisciplineType>
+  		<CodeValue>InterimRemovalDrugs</CodeValue>
+  		<ShortDescription>InterimRemovalDrugs</ShortDescription>
+  		<Description>Drugs</Description>
+ 		<Namespace>http://www.ed-fi.org/Descriptor/DisciplineDescriptor.xml</Namespace>
+  	</DisciplineType>
+  	<DisciplineType>
+  		<CodeValue>InterimRemovalWeapons</CodeValue>
+  		<ShortDescription>InterimRemovalWeapons</ShortDescription>
+  		<Description>Weapons</Description>
+ 		<Namespace>http://www.ed-fi.org/Descriptor/DisciplineDescriptor.xml</Namespace>
+  	</DisciplineType>
+  	<DisciplineType>
+  		<CodeValue>InterimRemovalSeriousBodilyInjury</CodeValue>
+  		<ShortDescription>InterimRemovalSeriousBodilyInjury</ShortDescription>
+  		<Description>Serious bodily injury</Description>
+ 		<Namespace>http://www.ed-fi.org/Descriptor/DisciplineDescriptor.xml</Namespace>
+  	</DisciplineType>
+  	<DisciplineType>
+  		<CodeValue>InterimRemovalHearingOfficer</CodeValue>
+  		<ShortDescription>InterimRemovalHearingOfficer</ShortDescription>
+  		<Description>Removed based on a Hearing Officer finding</Description>
+ 		<Namespace>http://www.ed-fi.org/Descriptor/DisciplineDescriptor.xml</Namespace>
+  	</DisciplineType>
+    <NetworkPurpose>
+      <CodeValue>CharterSchoolManagement</CodeValue>
+      <ShortDescription>CharterSchoolManagement</ShortDescription>
+      <Description>CharterSchoolManagement</Description>
+    <Namespace>uri://ed-fi.org/NetworkPurposeDescriptor</Namespace>
+    </NetworkPurpose>
+    <EducationOrganizationIdentificationSystem>
+      <CodeValue>IRS - EIN</CodeValue>
+      <ShortDescription>IRS - EIN</ShortDescription>
+      <Description>IRS - EIN</Description>
+    <Namespace>uri://ed-fi.org/EducationOrganizationIdentificationSystemDescriptor</Namespace>
+    </EducationOrganizationIdentificationSystem>
+    <EducationOrganizationIdentificationSystem>
+      <CodeValue>Supervisory Union</CodeValue>
+      <ShortDescription>Supervisory Union</ShortDescription>
+      <Description>A supervisory union is an administrative center or county superintendent’s office serving as the administrative center.</Description>
+    <Namespace>uri://ed-fi.org/EducationOrganizationIdentificationSystemDescriptor</Namespace>
+    </EducationOrganizationIdentificationSystem>
+    <CharterSchoolManagementOrganizationType>
+      <CodeValue>CMO</CodeValue>
+      <ShortDescription>Charter Management Organization</ShortDescription>
+      <Description>Charter Management Organization</Description>
+    <Namespace>https://ceds.ed.gov/element/001650</Namespace>
+    </CharterSchoolManagementOrganizationType>
+    <CharterSchoolManagementOrganizationType>
+      <CodeValue>EMO</CodeValue>
+      <ShortDescription>Education Management Organization</ShortDescription>
+      <Description></Description>
+    <Namespace>https://ceds.ed.gov/element/001650</Namespace>
+    </CharterSchoolManagementOrganizationType>
+    <CharterSchoolManagementOrganizationType>
+      <CodeValue>Other</CodeValue>
+      <ShortDescription>Other Management Organization</ShortDescription>
+      <Description>Other Management Organization</Description>
+    <Namespace>https://ceds.ed.gov/element/001650</Namespace>
+    </CharterSchoolManagementOrganizationType>
+    <DisplacementType>
+      <CodeValue>ADVTRAIN</CodeValue>
+      <ShortDescription>Advanced training</ShortDescription>
+      <Description>Advanced training</Description>
+    <Namespace>uri://ed-fi.org/DisplacementTypeDescriptor</Namespace>
+    </DisplacementType>
+    <DisplacementType>
+      <CodeValue>EMPLOYMENT</CodeValue>
+      <ShortDescription>Employment</ShortDescription>
+      <Description>Employment</Description>
+    <Namespace>uri://ed-fi.org/DisplacementTypeDescriptor</Namespace>
+    </DisplacementType>
+    <DisplacementType>
+      <CodeValue>MILITARY</CodeValue>
+      <ShortDescription>Military service</ShortDescription>
+      <Description>Military service</Description>
+    <Namespace>uri://ed-fi.org/DisplacementTypeDescriptor</Namespace>
+    </DisplacementType>
+    <DisplacementType>
+      <CodeValue>POSTSEC</CodeValue>
+      <ShortDescription>Were accepted and/or enrolled into post-secondary education</ShortDescription>
+      <Description>Were accepted and/or enrolled into post-secondary education</Description>
+    <Namespace>uri://ed-fi.org/DisplacementTypeDescriptor</Namespace>
+    </DisplacementType>
+    <DisplacementType>
+      <CodeValue>OBTAINEMP</CodeValue>
+      <ShortDescription>Obtained employment</ShortDescription>
+      <Description>Obtained employment</Description>
+    <Namespace>uri://ed-fi.org/DisplacementTypeDescriptor</Namespace>
+    </DisplacementType>
+    <StatePovertyDesignation>
+      <CodeValue>HighQuartile</CodeValue>
+      <ShortDescription>High poverty quartile school</ShortDescription>
+      <Description>The school is a high poverty quartile school according to state’s indicator of poverty.</Description>
+    <Namespace>https://ceds.ed.gov/element/000585</Namespace>
+    </StatePovertyDesignation>
+    <StatePovertyDesignation>
+      <CodeValue>LowQuartile</CodeValue>
+      <ShortDescription>Low poverty quartile school</ShortDescription>
+      <Description>The school is a low poverty quartile school according to state’s indicator of poverty.</Description>
+    <Namespace>https://ceds.ed.gov/element/000585</Namespace>
+    </StatePovertyDesignation>
+    <StatePovertyDesignation>
+      <CodeValue>Neither</CodeValue>
+      <ShortDescription>Neither high nor low poverty quartile school</ShortDescription>
+      <Description>The school is neither high nor low poverty quartile school according to state’s indicator of poverty.</Description>
+    <Namespace>https://ceds.ed.gov/element/000585</Namespace>
+    </StatePovertyDesignation>
+	<LocalEducationAgencyCategory>
+      <CodeValue>RegularNotInSupervisoryUnion</CodeValue>
+      <ShortDescription>Regular public school district that is NOT a component of a supervisory union</ShortDescription>
+      <Description>Regular public school district that is NOT a component of a supervisory union</Description>
+    <Namespace>uri://ed-fi.org/LocalEducationAgencyCategoryDescriptor</Namespace>
+	</LocalEducationAgencyCategory>
+  	<LocalEducationAgencyCategory>
+        <CodeValue>RegularInSupervisoryUnion</CodeValue>
+        <ShortDescription>Regular public school district that is a component of a supervisory union</ShortDescription>
+        <Description>Regular public school district that is a component of a supervisory union</Description>
+      <Namespace>uri://ed-fi.org/LocalEducationAgencyCategoryDescriptor</Namespace>
+	</LocalEducationAgencyCategory>
+  	<LocalEducationAgencyCategory>
+        <CodeValue>SupervisoryUnion</CodeValue>
+        <ShortDescription>Supervisory Union</ShortDescription>
+        <Description>Supervisory Union</Description>
+      <Namespace>uri://ed-fi.org/LocalEducationAgencyCategoryDescriptor</Namespace>
+	</LocalEducationAgencyCategory>
+  	<LocalEducationAgencyCategory>
+        <CodeValue>SpecializedPublicSchoolDistrict</CodeValue>
+        <ShortDescription>Specialized Public School District</ShortDescription>
+        <Description>Specialized Public School District</Description>
+      <Namespace>uri://ed-fi.org/LocalEducationAgencyCategoryDescriptor</Namespace>
+	</LocalEducationAgencyCategory>
+  	<LocalEducationAgencyCategory>
+        <CodeValue>ServiceAgency</CodeValue>
+        <ShortDescription>Service Agency</ShortDescription>
+        <Description>Service Agency</Description>
+      <Namespace>uri://ed-fi.org/LocalEducationAgencyCategoryDescriptor</Namespace>
+	</LocalEducationAgencyCategory>
+  	<LocalEducationAgencyCategory>
+        <CodeValue>StateOperatedAgency</CodeValue>
+        <ShortDescription>State Operated Agency</ShortDescription>
+        <Description>State Operated Agency</Description>
+      <Namespace>uri://ed-fi.org/LocalEducationAgencyCategoryDescriptor</Namespace>
+	</LocalEducationAgencyCategory>
+  	<LocalEducationAgencyCategory>
+        <CodeValue>FederalOperatedAgency</CodeValue>
+        <ShortDescription>Federal Operated Agency</ShortDescription>
+        <Description>Federal Operated Agency</Description>
+      <Namespace>uri://ed-fi.org/LocalEducationAgencyCategoryDescriptor</Namespace>
+	</LocalEducationAgencyCategory>
+  	<LocalEducationAgencyCategory>
+        <CodeValue>Other</CodeValue>
+        <ShortDescription>Other Local Education Agencies</ShortDescription>
+        <Description>Other Local Education Agencies</Description>
+      <Namespace>uri://ed-fi.org/LocalEducationAgencyCategoryDescriptor</Namespace>
+    </LocalEducationAgencyCategory>
+    <REAPAlternativeFundingStatus>
+      <CodeValue>Yes</CodeValue>
+      <ShortDescription>The LEA is exercising the alternative uses of funds authority</ShortDescription>
+      <Description>The LEA is exercising the alternative uses of funds authority</Description>
+    <Namespace>https://ceds.ed.gov/element/000560</Namespace>
+    </REAPAlternativeFundingStatus>
+    <REAPAlternativeFundingStatus>
+      <CodeValue>No</CodeValue>
+      <ShortDescription>The LEA is eligible but is not exercising the alternative uses of funds authority</ShortDescription>
+      <Description>The LEA is eligible but is not exercising the alternative uses of funds authority</Description>
+    <Namespace>https://ceds.ed.gov/element/000560</Namespace>
+    </REAPAlternativeFundingStatus>
+    <REAPAlternativeFundingStatus>
+      <CodeValue>NA</CodeValue>
+      <ShortDescription>The LEA is not eligible to use alternative uses of funds authority</ShortDescription>
+      <Description>The LEA is not eligible to use alternative uses of funds authority</Description>
+    <Namespace>https://ceds.ed.gov/element/000560</Namespace>
+    </REAPAlternativeFundingStatus>
+    <Weapon>
+  		<CodeValue>Multiple</CodeValue>
+  		<ShortDescription>More than one type of weapon or firearm.</ShortDescription>
+  		<Description>More than one type of weapon or firearm</Description>
+ 		<Namespace>uri://ed-fi.org/WeaponDescriptor</Namespace>
+  	</Weapon>
+    <NeglectedOrDelinquentProgram>
+  		<CodeValue>At–Risk Programs</CodeValue>
+  		<ShortDescription>Programs operated (through LEAs) that target students who are at risk of academic failure</ShortDescription>
+  		<Description>Programs operated (through LEAs) that target students who are at risk of academic failure, have a drug or alcohol problem, are pregnant or parenting, have been in contact with the juvenile justice system in the past, are at least 1 year behind the expected age/grade level, are English learners, are gang members, have dropped out of school in the past, or have a high absenteeism rate at school.</Description>
+ 		<Namespace>uri://ed-fi.org/NeglectedOrDelinquentProgramDescriptor</Namespace>
+  	</NeglectedOrDelinquentProgram>
+    <IndicatorStatus>
+      <CodeValue>MISSING</CodeValue>
+      <ShortDescription>The status of the indicator for a specific school is not available.</ShortDescription>
+      <Description>The status of the indicator for a specific school is not available.</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusDescriptor</Namespace>
+    </IndicatorStatus>
+    <IndicatorStatus>
+      <CodeValue>NOSTUDENTS</CodeValue>
+      <ShortDescription>No students in the subgroup</ShortDescription>
+      <Description>No students in the subgroup</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusDescriptor</Namespace>
+    </IndicatorStatus>
+    <IndicatorStatus>
+      <CodeValue>STTDEF</CodeValue>
+      <ShortDescription>State defined status</ShortDescription>
+      <Description>State defined status</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusDescriptor</Namespace>
+    </IndicatorStatus>
+    <IndicatorStatus>
+      <CodeValue>TOOFEW</CodeValue>
+      <ShortDescription>Too few students</ShortDescription>
+      <Description>Too few students</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusDescriptor</Namespace>
+    </IndicatorStatus>
+    <IndicatorStatusSubgroup>
+      <CodeValue>ECODIS</CodeValue>
+      <ShortDescription>Economically Disadvantaged (ED) Students</ShortDescription>
+      <Description>Economically Disadvantaged (ED) Students</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupDescriptor</Namespace>
+    </IndicatorStatusSubgroup>
+    <IndicatorStatusSubgroup>
+      <CodeValue>LEP</CodeValue>
+      <ShortDescription>English learner</ShortDescription>
+      <Description>English learner</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupDescriptor</Namespace>
+    </IndicatorStatusSubgroup>
+    <IndicatorStatusSubgroup>
+      <CodeValue>MA</CodeValue>
+      <ShortDescription>Asian</ShortDescription>
+      <Description>Asian</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupDescriptor</Namespace>
+    </IndicatorStatusSubgroup>
+    <IndicatorStatusSubgroup>
+      <CodeValue>MAN</CodeValue>
+      <ShortDescription>American Indian \ Alaska Native \ Native American</ShortDescription>
+      <Description>American Indian \ Alaska Native \ Native American</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupDescriptor</Namespace>
+    </IndicatorStatusSubgroup>
+    <IndicatorStatusSubgroup>
+      <CodeValue>Asian \ Pacific Islander</CodeValue>
+      <ShortDescription>MAP</ShortDescription>
+      <Description>Asian \ Pacific Islander</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupDescriptor</Namespace>
+    </IndicatorStatusSubgroup>
+    <IndicatorStatusSubgroup>
+      <CodeValue>MB</CodeValue>
+      <ShortDescription>Black (not Hispanic) African American</ShortDescription>
+      <Description>Black (not Hispanic) African American</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupDescriptor</Namespace>
+    </IndicatorStatusSubgroup>
+    <IndicatorStatusSubgroup>
+      <CodeValue>MF</CodeValue>
+      <ShortDescription>Filipino</ShortDescription>
+      <Description>Filipino</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupDescriptor</Namespace>
+    </IndicatorStatusSubgroup>
+    <IndicatorStatusSubgroup>
+      <CodeValue>MHL</CodeValue>
+      <ShortDescription>Hispanic \ Latino</ShortDescription>
+      <Description>Hispanic \ Latino</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupDescriptor</Namespace>
+    </IndicatorStatusSubgroup>
+    <IndicatorStatusSubgroup>
+      <CodeValue>MHN</CodeValue>
+      <ShortDescription>Hispanic (not Puerto Rican)</ShortDescription>
+      <Description>Hispanic (not Puerto Rican)</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupDescriptor</Namespace>
+    </IndicatorStatusSubgroup>
+    <IndicatorStatusSubgroup>
+      <CodeValue>MM</CodeValue>
+      <ShortDescription>Multicultural \ Multiethnic \ Multiracial \ other</ShortDescription>
+      <Description>Multicultural \ Multiethnic \ Multiracial \ other</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupDescriptor</Namespace>
+    </IndicatorStatusSubgroup>
+    <IndicatorStatusSubgroup>
+      <CodeValue>MNP</CodeValue>
+      <ShortDescription>Native Hawaiian \ other Pacific Islander \ Pacific Islander</ShortDescription>
+      <Description>Native Hawaiian \ other Pacific Islander \ Pacific Islander</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupDescriptor</Namespace>
+    </IndicatorStatusSubgroup>
+    <IndicatorStatusSubgroupType>
+      <CodeValue>AllStudents</CodeValue>
+      <ShortDescription>All Students</ShortDescription>
+      <Description>All Students</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupTypeDescriptor</Namespace>
+    </IndicatorStatusSubgroupType>
+    <IndicatorStatusSubgroupType>
+      <CodeValue>DisabilityStatus</CodeValue>
+      <ShortDescription>Disability Status</ShortDescription>
+      <Description>Disability Status</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupTypeDescriptor</Namespace>
+    </IndicatorStatusSubgroupType>
+    <IndicatorStatusSubgroupType>
+      <CodeValue>EconomicallyDisadvantagedStatus</CodeValue>
+      <ShortDescription>Economically DisadvantagedStatus</ShortDescription>
+      <Description>Economically DisadvantagedStatus</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupTypeDescriptor</Namespace>
+    </IndicatorStatusSubgroupType>
+    <IndicatorStatusSubgroupType>
+      <CodeValue>EnglishLearnerStatus</CodeValue>
+      <ShortDescription>English Learner Status</ShortDescription>
+      <Description>English Learner Status</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupTypeDescriptor</Namespace>
+    </IndicatorStatusSubgroupType>
+    <IndicatorStatusSubgroupType>
+      <CodeValue>RaceEthnicity</CodeValue>
+      <ShortDescription>Race Ethnicity</ShortDescription>
+      <Description>Race Ethnicity</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusSubgroupTypeDescriptor</Namespace>
+    </IndicatorStatusSubgroupType>
+
+    <IndicatorStatusType>
+      <CodeValue>AcademicAchievementIndicatorStatus</CodeValue>
+      <ShortDescription>Academic Achievement Indicator Status</ShortDescription>
+      <Description>Academic Achievement Indicator Status</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusTypeDescriptor</Namespace>
+    </IndicatorStatusType>
+    <IndicatorStatusType>
+      <CodeValue>GraduationRateIndicatorStatus</CodeValue>
+      <ShortDescription>Graduation Rate Indicator Status</ShortDescription>
+      <Description>Graduation Rate Indicator Status</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusTypeDescriptor</Namespace>
+    </IndicatorStatusType>
+    <IndicatorStatusType>
+      <CodeValue>OtherAcademicIndicatorStatus</CodeValue>
+      <ShortDescription>Other Academic Indicator Status</ShortDescription>
+      <Description>Other Academic Indicator Status</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusTypeDescriptor</Namespace>
+    </IndicatorStatusType>
+    <IndicatorStatusType>
+      <CodeValue>ProgressAchievingEnglishLanguageProficiency</CodeValue>
+      <ShortDescription>Progress Achieving English Language Proficiency Indicator Status</ShortDescription>
+      <Description>Progress Achieving English Language Proficiency Indicator Status</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusTypeDescriptor</Namespace>
+    </IndicatorStatusType>
+    <IndicatorStatusType>
+      <CodeValue>SchoolQualityOrStudentSuccessIndicatorStatus</CodeValue>
+      <ShortDescription>School Quality or Student Success Indicator Status</ShortDescription>
+      <Description>School Quality or Student Success Indicator Status</Description>
+    <Namespace>uri://ed-fi.org/IndicatorStatusTypeDescriptor</Namespace>
+    </IndicatorStatusType>
+
+    <InexperiencedStatus>
+      <CodeValue>TCHEXPRNCD</CodeValue>
+      <ShortDescription>Experienced teachers</ShortDescription>
+      <Description>Experienced teachers</Description>
+    <Namespace>uri://ed-fi.org/InexperiencedStatusDescriptor</Namespace>
+    </InexperiencedStatus>
+    <InexperiencedStatus>
+      <CodeValue>TCHINEXPRNCD</CodeValue>
+      <ShortDescription>Inexperienced teachers</ShortDescription>
+      <Description>Inexperienced teachers</Description>
+    <Namespace>uri://ed-fi.org/InexperiencedStatusDescriptor</Namespace>
+    </InexperiencedStatus>
+
+    <EmergencyorProvisionalCredentialStatus>
+      <CodeValue>TCHWEMRPRVCRD</CodeValue>
+      <ShortDescription>Emergency or Provisional</ShortDescription>
+      <Description>Emergency or Provisional – Teachers with emergency or provisional credential</Description>
+    <Namespace>uri://ed-fi.org/EmergencyorProvisionalCredentialStatusDescriptor</Namespace>
+    </EmergencyorProvisionalCredentialStatus>
+    <EmergencyorProvisionalCredentialStatus>
+      <CodeValue>TCHWOEMRPRVCRD</CodeValue>
+      <ShortDescription>No Emergency or Provisional</ShortDescription>
+      <Description>No Emergency or Provisional – Teachers without emergency or provisional credential</Description>
+    <Namespace>uri://ed-fi.org/EmergencyorProvisionalCredentialStatusDescriptor</Namespace>
+    </EmergencyorProvisionalCredentialStatus>
+
+    <OutOfFieldStatus>
+      <CodeValue>TCHINFLD</CodeValue>
+      <ShortDescription>Teaching in Field</ShortDescription>
+      <Description>Teaching in Field - Teachers teaching in the subject or field for which they are certified or licensed</Description>
+    <Namespace>uri://ed-fi.org/OutOfFieldStatusDescriptor</Namespace>
+    </OutOfFieldStatus>
+    <OutOfFieldStatus>
+      <CodeValue>TCHOUTFLD</CodeValue>
+      <ShortDescription>Not Teaching in Field</ShortDescription>
+      <Description>Not Teaching in Field - Teachers teaching in the subject or field for which they are not certified or license</Description>
+    <Namespace>uri://ed-fi.org/OutOfFieldStatusDescriptor</Namespace>
+    </OutOfFieldStatus>
+
+    <IdeaInterimRemovalType>
+      <CodeValue>InterimRemovalDrugs</CodeValue>
+      <ShortDescription>Removal for drugs</ShortDescription>
+      <Description>Removal for drugs</Description>
+    <Namespace>uri://ed-fi.org/IdeaInterimRemovalTypeDescriptor</Namespace>
+    </IdeaInterimRemovalType>
+    <IdeaInterimRemovalType>
+      <CodeValue>InterimRemovalWeapons</CodeValue>
+      <ShortDescription>Removal for weapons</ShortDescription>
+      <Description>Removal for weapons</Description>
+    <Namespace>uri://ed-fi.org/IdeaInterimRemovalTypeDescriptor</Namespace>
+    </IdeaInterimRemovalType>
+    <IdeaInterimRemovalType>
+      <CodeValue>InterimRemovalSeriousBodilyInjury</CodeValue>
+      <ShortDescription>Removal for serious bodily injury</ShortDescription>
+      <Description>Removal for bodily injury</Description>
+    <Namespace>uri://ed-fi.org/IdeaInterimRemovalTypeDescriptor</Namespace>
+    </IdeaInterimRemovalType>
+    <IdeaInterimRemovalType>
+      <CodeValue>InterimRemovalHearingOfficer</CodeValue>
+      <ShortDescription>Removed based on a Hearing Officer finding</ShortDescription>
+      <Description>Removed based on a Hearing Officer finding</Description>
+    <Namespace>uri://ed-fi.org/IdeaInterimRemovalTypeDescriptor</Namespace>
+    </IdeaInterimRemovalType>
+
+    <IdeaInterimRemovalReason>
+      <CodeValue>InterimRemovalDrugs</CodeValue>
+      <ShortDescription>InterimRemovalDrugs</ShortDescription>
+      <Description>Removed due to Drugs</Description>
+    <Namespace>uri://ed-fi.org/IdeaInterimRemovalReasonDescriptor</Namespace>
+    </IdeaInterimRemovalReason>
+    <IdeaInterimRemovalReason>
+      <CodeValue>InterimRemovalWeapons</CodeValue>
+      <ShortDescription>InterimRemovalWeapons</ShortDescription>
+      <Description>Removed due to Weapons</Description>
+    <Namespace>uri://ed-fi.org/IdeaInterimRemovalReasonDescriptor</Namespace>
+    </IdeaInterimRemovalReason>
+    <IdeaInterimRemovalReason>
+      <CodeValue>InterimRemovalSeriousBodilyInjury</CodeValue>
+      <ShortDescription>InterimRemovalSeriousBodilyInjury</ShortDescription>
+      <Description>Removed due to SeriousBodilyInjury</Description>
+    <Namespace>uri://ed-fi.org/IdeaInterimRemovalReasonDescriptor</Namespace>
+    </IdeaInterimRemovalReason>
+
+    <ReasonExited>
+      <CodeValue>Transferred</CodeValue>
+      <ShortDescription>Transferred to regular education</ShortDescription>
+      <Description>Transferred to regular education</Description>
+      <Namespace>uri://ed-fi.org/ReasonExitedDescriptor</Namespace>
+    </ReasonExited>
+    <ReasonExited>
+      <CodeValue>AlternateDiploma</CodeValue>
+      <ShortDescription>Graduated with an alternate diploma</ShortDescription>
+      <Description>Graduated with an alternate diploma</Description>
+      <Namespace>uri://ed-fi.org/ReasonExitedDescriptor</Namespace>
+    </ReasonExited>
+
+
+    <DisciplineMethodFirearm>
+      <CodeValue>EXPNOTMODNOALT</CodeValue>
+      <ShortDescription>One year expulsion and no educational services</ShortDescription>
+      <Description>One year expulsion and no educational services is the method used to discipline the student(s) who are not children with disabilities (IDEA) involved in firearms and other outcomes of firearms incidents.</Description>
+      <Namespace>https://ceds.ed.gov/element/000537</Namespace>
+    </DisciplineMethodFirearm>
+    <DisciplineMethodFirearm>
+      <CodeValue>EXPMODALT</CodeValue>
+      <ShortDescription>Expulsion modified to less than one year with educational services</ShortDescription>
+      <Description>Expulsion modified to less than one year with educational services is the method used to discipline the student(s) who are not children with disabilities (IDEA) involved in firearms and other outcomes of firearms incidents.</Description>
+      <Namespace>https://ceds.ed.gov/element/000537</Namespace>
+    </DisciplineMethodFirearm>
+    <DisciplineMethodFirearm>
+      <CodeValue>EXPMODNOALT</CodeValue>
+      <ShortDescription>Expulsion modified to less than one year without educational services</ShortDescription>
+      <Description>Expulsion modified to less than one year without educational services is the method used to discipline the student(s) who are not children with disabilities (IDEA) involved in firearms and other outcomes of firearms incidents.</Description>
+      <Namespace>https://ceds.ed.gov/element/000537</Namespace>
+    </DisciplineMethodFirearm>
+    <DisciplineMethodFirearm>
+      <CodeValue>EXPALT</CodeValue>
+      <ShortDescription>One year expulsion and educational services</ShortDescription>
+      <Description>One year expulsion and educational services is the method used to discipline the student(s) who are not children with disabilities (IDEA) involved in firearms and other outcomes of firearms incidents.</Description>
+      <Namespace>https://ceds.ed.gov/element/000537</Namespace>
+    </DisciplineMethodFirearm>
+    <DisciplineMethodFirearm>
+      <CodeValue>REMOVEOTHER</CodeValue>
+      <ShortDescription>Other reasons such as death, withdrawal, or incarceration</ShortDescription>
+      <Description>Other reasons such as death, withdrawal, or incarceration is the method used to discipline the student(s) who are not children with disabilities (IDEA) involved in firearms and other outcomes of firearms incidents.</Description>
+      <Namespace>https://ceds.ed.gov/element/000537</Namespace>
+    </DisciplineMethodFirearm>
+    <DisciplineMethodFirearm>
+      <CodeValue>OTHERDISACTION</CodeValue>
+      <ShortDescription>Another type of disciplinary action</ShortDescription>
+      <Description>Another type of disciplinary action is the method used to discipline the student(s) who are not children with disabilities (IDEA) involved in firearms and other outcomes of firearms incidents.</Description>
+      <Namespace>https://ceds.ed.gov/element/000537</Namespace>
+    </DisciplineMethodFirearm>
+    <DisciplineMethodFirearm>
+      <CodeValue>NOACTION</CodeValue>
+      <ShortDescription>No disciplinary action taken</ShortDescription>
+      <Description>No disciplinary action taken is the method used to discipline the student(s) who are not children with disabilities (IDEA) involved in firearms and other outcomes of firearms incidents.</Description>
+      <Namespace>https://ceds.ed.gov/element/000537</Namespace>
+    </DisciplineMethodFirearm>
+
+    <IDEADisciplineMethodFirearm>
+      <CodeValue>EXPMOD</CodeValue>
+      <ShortDescription>Expulsion modified to less than one year with educational services under IDEA</ShortDescription>
+      <Description>Expulsion modified to less than one year with educational services under IDEA was the methods used to discipline student(s) who are children with disabilities (IDEA) involved in firearms and other outcomes of firearms incidents.</Description>
+      <Namespace>https://ceds.ed.gov/element/000556</Namespace>
+    </IDEADisciplineMethodFirearm>
+    <IDEADisciplineMethodFirearm>
+      <CodeValue>EXPNOTMOD</CodeValue>
+      <ShortDescription>One year expulsion with educational services under IDEA</ShortDescription>
+      <Description>One year expulsion with educational services under IDEA was the methods used to discipline student(s) who are children with disabilities (IDEA) involved in firearms and other outcomes of firearms incidents.</Description>
+      <Namespace>https://ceds.ed.gov/element/000556</Namespace>
+    </IDEADisciplineMethodFirearm>
+    <IDEADisciplineMethodFirearm>
+      <CodeValue>REMOVEOTHER</CodeValue>
+      <ShortDescription>Other reasons such as death, withdrawal, or incarceration</ShortDescription>
+      <Description>Other reasons such as death, withdrawal, or incarceration was the methods used to discipline student(s) who are children with disabilities (IDEA) involved in firearms and other outcomes of firearms incidents.</Description>
+      <Namespace>https://ceds.ed.gov/element/000556</Namespace>
+    </IDEADisciplineMethodFirearm>
+    <IDEADisciplineMethodFirearm>
+      <CodeValue>OTHERDISACTION</CodeValue>
+      <ShortDescription>Another type of disciplinary action</ShortDescription>
+      <Description>Another type of disciplinary action was the methods used to discipline student(s) who are children with disabilities (IDEA) involved in firearms and other outcomes of firearms incidents.</Description>
+      <Namespace>https://ceds.ed.gov/element/000556</Namespace>
+    </IDEADisciplineMethodFirearm>
+    <IDEADisciplineMethodFirearm>
+      <CodeValue>NOACTION</CodeValue>
+      <ShortDescription>No disciplinary action taken</ShortDescription>
+      <Description>No disciplinary action taken was the methods used to discipline student(s) who are children with disabilities (IDEA) involved in firearms and other outcomes of firearms incidents.</Description>
+      <Namespace>https://ceds.ed.gov/element/000556</Namespace>
+    </IDEADisciplineMethodFirearm>
+
+    <AcademicSubject>
+      <CodeValue>English as a second language (ESL)</CodeValue>
+      <ShortDescription>English as a second language (ESL)</ShortDescription>
+      <Description>English as a second language (ESL)</Description>
+      <Namespace>uri://ed-fi.org/AcademicSubjectDescriptor</Namespace>
+    </AcademicSubject>
+
+    <TitleIProgramType>
+      <CodeValue>TargetedAssistanceProgram</CodeValue>
+      <ShortDescription>Public Targeted Assistance Program</ShortDescription>
+      <Description>The type of Title I program offered in the school or district Is Public Targeted Assistance Program</Description>
+      <Namespace>https://ceds.ed.gov/element/000284</Namespace>
+    </TitleIProgramType>
+    <TitleIProgramType>
+      <CodeValue>SchoolwideProgram</CodeValue>
+      <ShortDescription>Public Schoolwide Program</ShortDescription>
+      <Description>The type of Title I program offered in the school or district Is Public Schoolwide Program</Description>
+      <Namespace>https://ceds.ed.gov/element/000284</Namespace>
+    </TitleIProgramType>
+    <TitleIProgramType>
+      <CodeValue>PrivateSchoolStudents</CodeValue>
+      <ShortDescription>Private School Students Participating</ShortDescription>
+      <Description>The type of Title I program offered in the school or district Is Private School Students Participating</Description>
+      <Namespace>https://ceds.ed.gov/element/000284</Namespace>
+    </TitleIProgramType>
+    <TitleIProgramType>
+      <CodeValue>LocalNeglectedProgram</CodeValue>
+      <ShortDescription>Local Neglected Program</ShortDescription>
+      <Description>The type of Title I program offered in the school or district Is Local Neglected Program</Description>
+      <Namespace>https://ceds.ed.gov/element/000284</Namespace>
+    </TitleIProgramType>
+
+
+    <TitleIinstructionalService>
+      <CodeValue>ReadingLanguageArts</CodeValue>
+      <ShortDescription>Reading/Language Arts</ShortDescription>
+      <Description>The student is participating in and served by a Reading/Language Arts program under Title I, Part A of ESEA as amended.</Description>
+      <Namespace>https://ceds.ed.gov/element/000282</Namespace>
+    </TitleIinstructionalService>
+    <TitleIinstructionalService>
+      <CodeValue>Mathematics</CodeValue>
+      <ShortDescription>Mathematics</ShortDescription>
+      <Description>The student is participating in and served by a Mathematics program under Title I, Part A of ESEA as amended.</Description>
+      <Namespace>https://ceds.ed.gov/element/000282</Namespace>
+    </TitleIinstructionalService>
+    <TitleIinstructionalService>
+      <CodeValue>Science</CodeValue>
+      <ShortDescription>Science</ShortDescription>
+      <Description>The student is participating in and served by a Science program under Title I, Part A of ESEA as amended.</Description>
+      <Namespace>https://ceds.ed.gov/element/000282</Namespace>
+    </TitleIinstructionalService>
+    <TitleIinstructionalService>
+      <CodeValue>SocialSciences</CodeValue>
+      <ShortDescription>Social Sciences</ShortDescription>
+      <Description>The student is participating in and served by a Social Sciences program under Title I, Part A of ESEA as amended.</Description>
+      <Namespace>https://ceds.ed.gov/element/000282</Namespace>
+    </TitleIinstructionalService>
+    <TitleIinstructionalService>
+      <CodeValue>CareerAndTechnical</CodeValue>
+      <ShortDescription>Career and Technical Education</ShortDescription>
+      <Description>The student is participating in and served by a Career and Technical Education program under Title I, Part A of ESEA as amended.</Description>
+      <Namespace>https://ceds.ed.gov/element/000282</Namespace>
+    </TitleIinstructionalService>
+    <TitleIinstructionalService>
+      <CodeValue>Other</CodeValue>
+      <ShortDescription>Other</ShortDescription>
+      <Description>The student is participating in and served by a program under Title I, Part A of ESEA as amended in a subject/category not yet defined in CEDS.</Description>
+      <Namespace>https://ceds.ed.gov/element/000282</Namespace>
+    </TitleIinstructionalService>
+
+    <K12LeaTitleISupportService>
+      <CodeValue>HealthDentalEyeCare</CodeValue>
+      <ShortDescription>Health, Dental and Eye Care</ShortDescription>
+      <Description>Health, Dental and Eye Care is the type of support services provided to students in Title I programs.</Description>
+      <Namespace>https://ceds.ed.gov/element/000289</Namespace>
+    </K12LeaTitleISupportService>
+    <K12LeaTitleISupportService>
+      <CodeValue>GuidanceAdvocacy</CodeValue>
+      <ShortDescription>Supporting Guidance/Advocacy</ShortDescription>
+      <Description>Supporting Guidance/Advocacy is the type of support services provided to students in Title I programs.</Description>
+      <Namespace>https://ceds.ed.gov/element/000289</Namespace>
+    </K12LeaTitleISupportService>
+    <K12LeaTitleISupportService>
+      <CodeValue>Other</CodeValue>
+      <ShortDescription>Other</ShortDescription>
+      <Description>Any other type of support services provided to students in Title I programs.</Description>
+      <Namespace>https://ceds.ed.gov/element/000289</Namespace>
+    </K12LeaTitleISupportService>
+
+    <FederalProgramFundingAllocationType>
+      <CodeValue>RETAINED</CodeValue>
+      <ShortDescription>Retained by SEA for program administration, etc.</ShortDescription>
+      <Description>Retained by SEA for program administration, etc. is the type of federal program funding allocation or distribution made.</Description>
+      <Namespace>https://ceds.ed.gov/element/000548</Namespace>
+    </FederalProgramFundingAllocationType>
+    <FederalProgramFundingAllocationType>
+      <CodeValue>TRANSFER</CodeValue>
+      <ShortDescription>Transferred to another state agency</ShortDescription>
+      <Description>Transferred to another state agency is the type of federal program funding allocation or distribution made.</Description>
+      <Namespace>https://ceds.ed.gov/element/000548</Namespace>
+    </FederalProgramFundingAllocationType>
+    <FederalProgramFundingAllocationType>
+      <CodeValue>DISTNONLEA</CodeValue>
+      <ShortDescription>Distributed to entities other  than LEAs</ShortDescription>
+      <Description>Distributed to entities other  than LEAs is the type of federal program funding allocation or distribution made.</Description>
+      <Namespace>https://ceds.ed.gov/element/000548</Namespace>
+    </FederalProgramFundingAllocationType>
+    <FederalProgramFundingAllocationType>
+      <CodeValue>UNALLOC</CodeValue>
+      <ShortDescription>Unallocated or returned funds</ShortDescription>
+      <Description>Unallocated or returned funds is the type of federal program funding allocation or distribution made.</Description>
+      <Namespace>https://ceds.ed.gov/element/000548</Namespace>
+    </FederalProgramFundingAllocationType>
+
+    <MepProjectType>
+      <CodeValue>SchoolDay</CodeValue>
+      <ShortDescription>Regular school year - school day only</ShortDescription>
+      <Description>The project funded in whole or in part by Migrant Education Program funds is  available during the regular school year - school day only.</Description>
+      <Namespace>https://ceds.ed.gov/element/000463</Namespace>
+    </MepProjectType>
+    <MepProjectType>
+      <CodeValue>ExtendedDay</CodeValue>
+      <ShortDescription>Regular school year - school day/extended day</ShortDescription>
+      <Description>The project funded in whole or in part by Migrant Education Program funds is  available during the regular school year - school day/extended day.</Description>
+      <Namespace>https://ceds.ed.gov/element/000463</Namespace>
+    </MepProjectType>
+    <MepProjectType>
+      <CodeValue>SummerIntersession</CodeValue>
+      <ShortDescription>Summer/intersession only</ShortDescription>
+      <Description>The project funded in whole or in part by Migrant Education Program funds is available during summer/intersession only.</Description>
+      <Namespace>https://ceds.ed.gov/element/000463</Namespace>
+    </MepProjectType>
+    <MepProjectType>
+      <CodeValue>YearRound</CodeValue>
+      <ShortDescription>Year round</ShortDescription>
+      <Description>The project funded in whole or in part by Migrant Education Program funds is available year round.</Description>
+      <Namespace>https://ceds.ed.gov/element/000463</Namespace>
+    </MepProjectType>
+
+    <ProgramType>
+      <CodeValue>Food Service Program</CodeValue>
+      <ShortDescription>Food Service Program</ShortDescription>
+      <Description>Food Service Program</Description>
+      <Namespace>uri://ed-fi.org/ProgramTypeDescriptor</Namespace>
+    </ProgramType>
+
+	<SchoolDangerousStatus>
+      <CodeValue>YES</CodeValue>
+      <ShortDescription>Persistently Dangerous</ShortDescription>
+      <Description>Persistently Dangerous</Description>
+      <Namespace>uri://ed-fi.org/SchoolDangerousStatusDescriptor</Namespace>
+    </SchoolDangerousStatus>
+	<SchoolDangerousStatus>
+      <CodeValue>NO</CodeValue>
+      <ShortDescription>Not Persistently Dangerous</ShortDescription>
+      <Description>Not Persistently Dangerous</Description>
+      <Namespace>uri://ed-fi.org/SchoolDangerousStatusDescriptor</Namespace>
+    </SchoolDangerousStatus>
+
+	<ComprehensiveAndTargetedSupport>
+      <CodeValue>CSI</CodeValue>
+      <ShortDescription>Comprehensive Support and Improvement</ShortDescription>
+      <Description>Comprehensive Support and Improvement</Description>
+      <Namespace>uri://ed-fi.org/ComprehensiveAndTargetedSupportDescriptor</Namespace>
+    </ComprehensiveAndTargetedSupport>
+	<ComprehensiveAndTargetedSupport>
+      <CodeValue>TSI</CodeValue>
+      <ShortDescription>Targeted Support and Improvement</ShortDescription>
+      <Description>Targeted Support and Improvement</Description>
+      <Namespace>uri://ed-fi.org/ComprehensiveAndTargetedSupportDescriptor</Namespace>
+    </ComprehensiveAndTargetedSupport>
+	<ComprehensiveAndTargetedSupport>
+      <CodeValue>CSIEXIT</CodeValue>
+      <ShortDescription>Comprehensive Support and Improvement - Exit Status</ShortDescription>
+      <Description>Comprehensive Support and Improvement - Exit Status</Description>
+      <Namespace>uri://ed-fi.org/ComprehensiveAndTargetedSupportDescriptor</Namespace>
+    </ComprehensiveAndTargetedSupport>
+	<ComprehensiveAndTargetedSupport>
+      <CodeValue>TSIEXIT</CodeValue>
+      <ShortDescription>Targeted Support and Improvement - Exit Status</ShortDescription>
+      <Description>Targeted Support and Improvement - Exit Status</Description>
+      <Namespace>uri://ed-fi.org/ComprehensiveAndTargetedSupportDescriptor</Namespace>
+    </ComprehensiveAndTargetedSupport>
+	<ComprehensiveAndTargetedSupport>
+      <CodeValue>NOTCSITSI</CodeValue>
+      <ShortDescription>Not Comprehensive Support &amp; Improvement or Targeted Support &amp; Improvement</ShortDescription>
+      <Description>Not Comprehensive Support &amp; Improvement or Targeted Support &amp; Improvement</Description>
+      <Namespace>uri://ed-fi.org/ComprehensiveAndTargetedSupportDescriptor</Namespace>
+    </ComprehensiveAndTargetedSupport>
+
+	<ComprehensiveSupport>
+      <CodeValue>CSILOWGR</CodeValue>
+      <ShortDescription>Low graduation rate high school</ShortDescription>
+      <Description>Low graduation rate high school</Description>
+      <Namespace>uri://ed-fi.org/ComprehensiveSupportDescriptor</Namespace>
+	</ComprehensiveSupport>
+	<ComprehensiveSupport>
+      <CodeValue>CSILOWPERF</CodeValue>
+      <ShortDescription>Lowest-performing school</ShortDescription>
+      <Description>Lowest-performing school</Description>
+      <Namespace>uri://ed-fi.org/ComprehensiveSupportDescriptor</Namespace>
+	</ComprehensiveSupport>
+	<ComprehensiveSupport>
+      <CodeValue>CSIOTHER</CodeValue>
+      <ShortDescription>Additional targeted support school not exiting such status</ShortDescription>
+      <Description>Additional targeted support school not exiting such status</Description>
+      <Namespace>uri://ed-fi.org/ComprehensiveSupportDescriptor</Namespace>
+	</ComprehensiveSupport>
+
+	<TargetedSupport>
+      <CodeValue>TSIOTHER</CodeValue>
+      <ShortDescription>Additional targeted support and improvement school</ShortDescription>
+      <Description>Additional targeted support and improvement school</Description>
+      <Namespace>uri://ed-fi.org/TargetedSupportDescriptor</Namespace>
+	</TargetedSupport>
+	<TargetedSupport>
+      <CodeValue>TSIUNDER</CodeValue>
+      <ShortDescription>Consistently underperforming subgroups school</ShortDescription>
+      <Description>Consistently underperforming subgroups school</Description>
+      <Namespace>uri://ed-fi.org/TargetedSupportDescriptor</Namespace>
+	</TargetedSupport>
+
+	<ParaprofessionalQualification>
+      <CodeValue>Qualified</CodeValue>
+      <ShortDescription>Qualified</ShortDescription>
+      <Description>The paraprofessional is qualified for their assignment according to state definition.</Description>
+      <Namespace>https://ceds.ed.gov/element/000207</Namespace>
+	</ParaprofessionalQualification>
+	<ParaprofessionalQualification>
+      <CodeValue>NotQualified</CodeValue>
+      <ShortDescription>Not Qualified</ShortDescription>
+      <Description>The paraprofessional is NOT qualified for their assignment according to state definition.</Description>
+      <Namespace>https://ceds.ed.gov/element/000207</Namespace>
+	</ParaprofessionalQualification>
+
+	<ProgressAchievingEnglishLanguageProficiencyIndicatorStatus>
+      <CodeValue>STTDEF</CodeValue>
+      <ShortDescription>State defined status</ShortDescription>
+      <Description>A status defined by the state.  The state defined status is provided in a separate field in the file.</Description>
+      <Namespace>uri://ed-fi.org/ProgressAchievingEnglishLanguageProficiencyIndicatorStatusDescriptor</Namespace>
+	</ProgressAchievingEnglishLanguageProficiencyIndicatorStatus>
+	<ProgressAchievingEnglishLanguageProficiencyIndicatorStatus>
+      <CodeValue>TOOFEW</CodeValue>
+      <ShortDescription>Too few students</ShortDescription>
+      <Description>The number of students in the school was less than the minimum group size necessary required to reliably calculate the indicator</Description>
+      <Namespace>uri://ed-fi.org/ProgressAchievingEnglishLanguageProficiencyIndicatorStatusDescriptor</Namespace>
+	</ProgressAchievingEnglishLanguageProficiencyIndicatorStatus>
+	<ProgressAchievingEnglishLanguageProficiencyIndicatorStatus>
+      <CodeValue>NOSTUDENTS</CodeValue>
+      <ShortDescription>No students in the subgroup</ShortDescription>
+      <Description>If no students are in the school, the school should not be included in this file. If the school is included, then the status would be NOSTUDENTS.</Description>
+      <Namespace>uri://ed-fi.org/ProgressAchievingEnglishLanguageProficiencyIndicatorStatusDescriptor</Namespace>
+	</ProgressAchievingEnglishLanguageProficiencyIndicatorStatus>
+
+	<ReconstitutedStatusDescriptor>
+      <CodeValue>Yes</CodeValue>
+      <ShortDescription>Reconstituted school</ShortDescription>
+      <Description>Reconstituted school</Description>
+      <Namespace>uri://ed-fi.org/ReconstitutedStatusDescriptor</Namespace>
+	</ReconstitutedStatusDescriptor>
+	<ReconstitutedStatusDescriptor>
+      <CodeValue>No</CodeValue>
+      <ShortDescription>Not a reconstituted school</ShortDescription>
+      <Description>Not a reconstituted school</Description>
+      <Namespace>uri://ed-fi.org/ReconstitutedStatusDescriptor</Namespace>
+	</ReconstitutedStatusDescriptor>
+
+  <StaffClassificationDescriptor>
+      <CodeValue>Paraprofessionals</CodeValue>
+      <ShortDescription>Paraprofessionals</ShortDescription>
+      <Description>Paraprofessionals are employees who provide instructional support, including those who: (1) provide one-on-one tutoring if such tutoring is scheduled at a time when a student would not otherwise receive instruction from a teacher, (2) assist with classroom management, such as organizing instructional and other materials, (3) provide instructional assistance in a computer laboratory, (4) conduct parental involvement activities, (5) provide support in a library or media center, (6) act as a translator, or (7) provide instructional support services under the direct supervision of a teacher.</Description>
+      <Namespace>uri://ed-fi.org/StaffClassificationDescriptor</Namespace>
+  </StaffClassificationDescriptor>
+
+  </InterchangeDescriptors>

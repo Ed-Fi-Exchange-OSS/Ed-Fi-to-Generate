@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AggregateExtensions logicalSchema="Extension" schema="extension">
+  <Aggregate root="BehaviorTypeDescriptor">
+    <Entity table="BehaviorTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CedsLocalEducationAgency">
+    <Entity table="CedsLocalEducationAgency" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CedsSchool">
+    <Entity table="CedsSchool" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CedsSchoolAccountability">
+    <Entity table="CedsSchoolAccountability" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CedsSchoolComprehensiveAndTargetedSupport">
+    <Entity table="CedsSchoolComprehensiveAndTargetedSupport" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CedsSchoolCustomIndicatorStatusType">
+    <Entity table="CedsSchoolCustomIndicatorStatusType" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CedsSchoolIndicatorStatus">
+    <Entity table="CedsSchoolIndicatorStatus" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CedsSchoolStatus">
+    <Entity table="CedsSchoolStatus" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CedsSpecialEducationStaffCategory">
+    <Entity table="CedsSpecialEducationStaffCategory" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CedsStudentAssessment">
+    <Entity table="CedsStudentAssessment" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CedsStudentCTEProgramAssociation">
+    <Entity table="CedsStudentCTEProgramAssociation" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CedsStudentHomelessProgramAssociation">
+    <Entity table="CedsStudentHomelessProgramAssociation" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CedsStudentMigrantEducationProgramAssociation">
+    <Entity table="CedsStudentMigrantEducationProgramAssociation" isA="GeneralStudentProgramAssociation" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CedsStudentNoDProgramAssociation">
+    <Entity table="CedsStudentNoDProgramAssociation" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CharterContract">
+    <Entity table="CharterContract" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CharterSchoolApprovalAgency">
+    <Entity table="CharterSchoolApprovalAgency" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="CharterSchoolManagementOrganizationTypeDescriptor">
+    <Entity table="CharterSchoolManagementOrganizationTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="ComprehensiveAndTargetedSupportDescriptor">
+    <Entity table="ComprehensiveAndTargetedSupportDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="ComprehensiveSupportDescriptor">
+    <Entity table="ComprehensiveSupportDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="DisciplineActionDiscipline">
+    <Entity table="DisciplineActionDiscipline" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="DisciplineMethodFirearmDescriptor">
+    <Entity table="DisciplineMethodFirearmDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="DisciplineTypeDescriptor">
+    <Entity table="DisciplineTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="DisplacementTypeDescriptor">
+    <Entity table="DisplacementTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="EducationOrganizationFederalFunding">
+    <Entity table="EducationOrganizationFederalFunding" isA="EducationOrganization" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="EmergencyorProvisionalCredentialStatusDescriptor">
+    <Entity table="EmergencyorProvisionalCredentialStatusDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="FederalProgramFundingAllocationTypeDescriptor">
+    <Entity table="FederalProgramFundingAllocationTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="IDEADisciplineMethodFirearmDescriptor">
+    <Entity table="IDEADisciplineMethodFirearmDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="IdeaInterimRemovalReasonDescriptor">
+    <Entity table="IdeaInterimRemovalReasonDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="IdeaInterimRemovalTypeDescriptor">
+    <Entity table="IdeaInterimRemovalTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="IndicatorStatusDescriptor">
+    <Entity table="IndicatorStatusDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="IndicatorStatusSubgroupDescriptor">
+    <Entity table="IndicatorStatusSubgroupDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="IndicatorStatusSubgroupTypeDescriptor">
+    <Entity table="IndicatorStatusSubgroupTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="IndicatorStatusTypeDescriptor">
+    <Entity table="IndicatorStatusTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="InexperiencedStatusDescriptor">
+    <Entity table="InexperiencedStatusDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="K12LeaTitleISupportServiceDescriptor">
+    <Entity table="K12LeaTitleISupportServiceDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="LocalEducationAgencyTypeDescriptor">
+    <Entity table="LocalEducationAgencyTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="MepProjectTypeDescriptor">
+    <Entity table="MepProjectTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="MigrantEducationProgramEnrollmentTypeDescriptor">
+    <Entity table="MigrantEducationProgramEnrollmentTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="MigrantEducationProgramServicesTypeDescriptor">
+    <Entity table="MigrantEducationProgramServicesTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="NationalSchoolLunchProgramDirectCertificationIndicatorDescriptor">
+    <Entity table="NationalSchoolLunchProgramDirectCertificationIndicatorDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="NationalSchoolLunchProgramStatusDescriptor">
+    <Entity table="NationalSchoolLunchProgramStatusDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="OutOfFieldStatusDescriptor">
+    <Entity table="OutOfFieldStatusDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="ParaprofessionalQualificationDescriptor">
+    <Entity table="ParaprofessionalQualificationDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="PerkinsLEPStatusDescriptor">
+    <Entity table="PerkinsLEPStatusDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="ProgressAchievingEnglishLanguageProficiencyIndicatorStatusDescriptor">
+    <Entity table="ProgressAchievingEnglishLanguageProficiencyIndicatorStatusDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="REAPAlternativeFundingStatusDescriptor">
+    <Entity table="REAPAlternativeFundingStatusDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="ReconstitutedStatusDescriptor">
+    <Entity table="ReconstitutedStatusDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="SchoolDangerousStatusDescriptor">
+    <Entity table="SchoolDangerousStatusDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="SchoolFederalFunds">
+    <Entity table="SchoolFederalFunds" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="SharedTimeIndicatorDescriptor">
+    <Entity table="SharedTimeIndicatorDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="SpecialEducationAgeGroupTaughtDescriptor">
+    <Entity table="SpecialEducationAgeGroupTaughtDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="SpecialEducationSupportServicesCategoryDescriptor">
+    <Entity table="SpecialEducationSupportServicesCategoryDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="StateDefinedCustomIndicator">
+    <Entity table="StateDefinedCustomIndicator" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="StateDefinedCustomIndicatorStatusTypeDescriptor">
+    <Entity table="StateDefinedCustomIndicatorStatusTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="StateDefinedIndicator">
+    <Entity table="StateDefinedIndicator" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="StatePovertyDesignationDescriptor">
+    <Entity table="StatePovertyDesignationDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="TargetedSupportDescriptor">
+    <Entity table="TargetedSupportDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="TitleIProgramStaffCategoryDescriptor">
+    <Entity table="TitleIProgramStaffCategoryDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="TitleIProgramTypeDescriptor">
+    <Entity table="TitleIProgramTypeDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="TitleIinstructionalServiceDescriptor">
+    <Entity table="TitleIinstructionalServiceDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+  <Aggregate root="VirtualSchoolStatusDescriptor">
+    <Entity table="VirtualSchoolStatusDescriptor" isA="Descriptor" schema="extension"/>
+  </Aggregate>
+</AggregateExtensions>

@@ -1,0 +1,32 @@
+Domain Entity DisciplineActionDiscipline
+    documentation "This is documentation."
+    integer StudentUSI
+        documentation "The identifier assigned to a local education agency by the State Education Agency (SEA)."
+        is part of identity
+        is queryable field
+    string CedsDisciplineActionIdentifier
+        documentation ""
+        is part of identity
+        is queryable field
+        min length 1
+        max length 20
+    date DisciplineDate
+        documentation ""
+        is part of identity
+        is queryable field
+    integer DisciplineDescriptorId
+        documentation ""
+        is part of identity
+        is queryable field
+    descriptor IdeaInterimRemovalType
+        documentation ""
+        is optional
+    descriptor IdeaInterimRemovalReason
+        documentation ""
+        is optional
+    integer DisciplineMethodFirearmDescriptorId
+       documentation ""
+       is optional
+    integer IDEADisciplineMethodFirearmDescriptorId
+       documentation ""
+       is optional

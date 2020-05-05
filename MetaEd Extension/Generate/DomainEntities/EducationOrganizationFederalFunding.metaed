@@ -1,0 +1,18 @@
+Domain Entity EducationOrganizationFederalFunding based on EducationOrganization
+    documentation "This entity represents funding for the organization."
+    string FederalProgramCode
+        documentation "The Federal Program Code as defined in CEDS."
+        is optional
+        max length 10
+    currency FederalProgramsFundingAllocation
+        documentation "The Federal Programs Funding Allocation as defined in CEDS."
+        is optional
+    currency ParentalInvolvmementReservationFunds
+        documentation "The Parent Involvement Reservation Funds as defined in CEDS."
+        is optional
+    descriptor REAPAlternativeFundingStatus
+        documentation "LEA exercises alternative funding "
+        is optional
+    descriptor FederalProgramFundingAllocationType
+        documentation ""
+        is optional

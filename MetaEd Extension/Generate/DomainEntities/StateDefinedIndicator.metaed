@@ -1,0 +1,16 @@
+Domain Entity StateDefinedIndicator
+    documentation "This is documentation."
+    integer StatedDefinedCustomIndicatorId
+        documentation "This is documentation."
+        is part of identity
+    integer  SchoolYear
+      documentation ""
+      is part of identity
+    string Code
+      documentation ""
+      is required
+      max length 50
+  string Definition
+        documentation ""
+        is optional
+        max length 500

@@ -1,0 +1,89 @@
+FS002: GOOD
+FS005: GOOD
+FS006: GOOD
+FS007: GOOD
+FS009: GOOD
+FS029: LEAS, SCHOOLS: some not showing up
+FS032: GOOD
+FS033: GOOD
+FS035: GOOD
+FS037: good
+fs039: good
+FS040: good
+FS045: good
+FS050: good
+FS052: good
+FS054: good
+FS059: good staff nunber is too high
+FS067: good
+FS070: Subtotal 1 too high Staff FTE
+FS082: good
+FS083: good
+FS086: good
+FS088: good
+FS089: good
+FS099: good
+FS103: good
+FS112: Total is too high
+FS113: good
+FS116: good
+FS118: good
+FS119: good
+FS121: good
+FS122: good
+FS125: good
+FS126: good
+FS127: good
+FS129: good
+FS130: good
+FS131: Only 2016-17G
+FS132: good
+FS134: good
+FS137: good
+FS138: good
+FS139: goodG
+FS141: good
+
+FS142: good
+FS143 good:
+FS144: good
+FS145: good
+FS150: Missing data cohort
+FS151: CSA: Cohort Status missing
+FS154: good
+FS155:good
+FS156: good
+FS157: good
+FS158: good
+FS160: GOOD
+FS163: GOOD
+FS165: Good
+FS169: good
+FS170: good
+FS175: good
+FS178: good
+FS179: good
+FS180: good
+FS181: good
+FS185: goodG
+FS188: good
+FS189: good
+FS190: good
+FS193: good
+FS194: good
+FS195: good
+FS196: good
+FS197: good
+FS198: good
+FS199: good
+FS200: Indicator Status missing
+FS201: Indicator Status missing
+FS202: good
+FS203: good
+FS204: good
+FS205: good
+FS206: no year for 2017-18only has 2018-19
+
+
+
+

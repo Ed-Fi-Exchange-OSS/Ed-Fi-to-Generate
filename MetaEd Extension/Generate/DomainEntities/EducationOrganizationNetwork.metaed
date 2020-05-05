@@ -1,0 +1,4 @@
+Domain Entity EducationOrganizationNetwork additions
+  descriptor CharterSchoolManagementOrganizationType
+    documentation "This is an extension to EducationOrganizationNetwork."
+    is optional

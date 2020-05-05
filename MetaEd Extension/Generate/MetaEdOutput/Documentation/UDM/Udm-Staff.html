@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head><title>MetaEd Generated Interchange Brief</title><link rel="stylesheet" href="confluence-like.css"></head><body><h1 id="staff">Staff</h1>
+<hr>
+<p>The Staff domain represents a wide variety of staff information:</p>
+<ul>
+<li>Staff captures information about experience and credentials.</li>
+<li>StaffSchoolAssociation captures additional information and associations relating to instructional duties.</li>
+<li>StaffEducationOrganizationEmploymentAssociation represents employment information.</li>
+<li>StaffEducationOrganizationAssignmentAssociation represents position assignments and roles. The employment and assignment associations are separated to accommodate a number of different types of situations. Staff may have multiple employment and assignment associations. Staff may be employed with one organization,like an LEA, whereas their assignments are at other organizations, specifically schools. If an assignment is directly tied to employment (i.e., the staff member&#39;s pay would differ based upon the assignments), then an association is used from theStaffEducationOrganizationAssignmentAssociation to the StaffEducationOrganizationEmploymentAssociation.</li>
+<li>LeaveEvent tracks staff leave history.</li>
+<li>OpenStaffPosition indicates the employment postings for an education organization and captures the result of that posting.</li>
+</ul>
+<h4 id="staff-model-entities">Staff Model Entities</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>EducationOrganization</td>
+<td>This entity represents any public or private institution, organization, or agency that provides instructional or support services to students or staff at any level.</td>
+</tr>
+<tr>
+<td>EducationServiceCenter</td>
+<td>This entity represents a regional, multi-services public agency authorized by state law to develop, manage and provide services, programs, or other support options (e.g., construction, food services, and technology services) to LEAs.</td>
+</tr>
+<tr>
+<td>LeaveEvent</td>
+<td>This event entity represents the recording of the dates of staff leave (e.g., sick leave, personal time, vacation).</td>
+</tr>
+<tr>
+<td>LocalEducationAgency</td>
+<td>This entity represents an administrative unit at the local level which exists primarily to operate schools or to contract for educational services. It includes school districts, charter schools, charter management organizations, or other local administrative organizations.</td>
+</tr>
+<tr>
+<td>OpenStaffPosition</td>
+<td>This entity represents an open staff position that the education organization is seeking to fill.</td>
+</tr>
+<tr>
+<td>School</td>
+<td>This entity represents an educational organization that includes staff and students who participate in classes and educational activity groups.</td>
+</tr>
+<tr>
+<td>Staff</td>
+<td>This entity represents an individual who performs specified activities for any public or private education institution or agency that provides instructional and/or support services to students or staff at the early childhood level through high school completion. For example, this includes:<br/>    1. An &quot;employee&quot; who performs services under the direction of the employing institution or agency is compensated for such services by the employer and is eligible for employee benefits and wage or salary tax withholdings<br/>    2. A &quot;contractor&quot; or &quot;consultant&quot; who performs services for an agreed upon fee or an employee of a management service contracted to work on site<br/>    3. A &quot;volunteer&quot; who performs services on a voluntary and uncompensated basis<br/>    4. An in-kind service provider<br/>    5. An independent contractor or businessperson working at a school site.</td>
+</tr>
+<tr>
+<td>StaffEducationOrganizationAssignmentAssociation</td>
+<td>This association indicates the education organization to which a staff member provides services; also known as school of service.</td>
+</tr>
+<tr>
+<td>StaffEducationOrganizationEmploymentAssociation</td>
+<td>This association indicates the EducationOrganization an employee, contractor, volunteer, or other service provider is formally associated with typically indicated by which organization the staff member has a services contract with or receives compensation from.</td>
+</tr>
+<tr>
+<td>StateEducationAgency</td>
+<td>This entity represents the agency of the state charged with the primary responsibility for coordinating and supervising public instruction, including the setting of standards for elementary and secondary instructional programs.</td>
+</tr>
+<tr>
+<td>StaffSchoolAssociation</td>
+<td>This association indicates the School(s) to which a staff member provides instructional services.</td>
+</tr>
+</tbody></table>
+<p><img src="/path/to/domain-model.png" alt="Staff Model Diagram"></p>
+<h4 id="staff-model">Staff Model</h4>
+</body><html>

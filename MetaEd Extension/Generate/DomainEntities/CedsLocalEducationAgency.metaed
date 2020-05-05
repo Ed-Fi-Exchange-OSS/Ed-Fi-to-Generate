@@ -1,0 +1,24 @@
+Domain Entity CedsLocalEducationAgency
+    documentation "This entity extends LocalEducationAgency to contain elements necessary for loading Generate."
+    integer CedsLocalEducationAgencyId
+        documentation "The identifier assigned to a local education agency by the State Education Agency (SEA)."
+        is part of identity
+        is queryable field
+    descriptor LocalEducationAgencyCategory
+        documentation "The category of local education agency/district. For example: Independent or Charter."
+        is optional
+    domain entity LocalEducationAgency
+        documentation "This entity maintains information about federal reporting and accountability for local education agencies."
+        is required
+    descriptor TitleIinstructionalService
+      documentation ""
+      is optional
+    descriptor TitleIProgramType
+      documentation ""
+      is optional
+    descriptor K12LeaTitleISupportService
+      documentation ""
+      is optional
+    descriptor MepProjectType
+      documentation ""
+      is optional

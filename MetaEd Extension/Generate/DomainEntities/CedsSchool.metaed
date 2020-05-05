@@ -1,0 +1,33 @@
+Domain Entity CedsSchool
+    documentation "This is an extension of edfi.School."
+    integer CedsSchoolId
+        documentation "The identifier assigned to a local education agency by the State Education Agency (SEA)."
+        is part of identity
+        is queryable field
+    integer CharterSchoolApprovalAgencyId
+        documentation "This is the identifier of the education organization that approves charter school."
+        is optional
+    integer EducationOrgabizationNetworkId
+        documentation "This is the identifier of the education organization Network."
+        is optional
+    descriptor NationalSchoolLunchProgramStatus
+        documentation "The classification of participation by a school in the National School Lunch Program."
+        is optional
+    descriptor ReconstitutedStatus
+        documentation "An indication that the school was restructured, transformed or otherwise changed as a consequence of the state's accountability system under ESEA or as a result of School Improvement Grants (SIG)."
+        is optional
+    descriptor SharedTimeIndicator
+        documentation "An indication that a school offers career and technical education or other educational services in which some or all students are enrolled at a separate school of record and attend the shared-time school on a part-time basis."
+        is optional
+    descriptor VirtualSchoolStatus
+        documentation "The identifier assigned to a school by the state education agency (SEA).  Also known as the State School Identification Number (ID).  This ID cannot be updated through this file."
+        is optional
+    domain entity CharterContract
+        documentation "This is a extension attribute of edfi.school charter contract."
+        is optional
+    descriptor StatePovertyDesignation
+        documentation "a metric that a state uses to determine the high poverty and low poverty schools"
+        is optional
+    descriptor MepProjectType
+        documentation ""
+        is optional

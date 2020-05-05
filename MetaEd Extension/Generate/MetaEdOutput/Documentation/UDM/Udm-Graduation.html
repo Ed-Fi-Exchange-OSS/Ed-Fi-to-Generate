@@ -1,0 +1,48 @@
+<!DOCTYPE html><html><head><title>MetaEd Generated Interchange Brief</title><link rel="stylesheet" href="confluence-like.css"></head><body><h1 id="graduation">Graduation</h1>
+<hr>
+<p>The Graduation domain model represents student outcomes.</p>
+<ul>
+<li>A GraduationPlan entity represents either a generic graduation plan for all or many students or an individualized graduation plan. TheGraduationPlan supports several levels of detail, including overall credit requirements, credits by subject area, or down to specific courses to be taken.</li>
+<li>A PostSecondaryEvent entity represents significant postsecondary education information, such as college applications, remedial course enrollment, acceptances, and detailed postsecondary institution information.</li>
+<li>A Diploma element represents graduation certificate information with associated honors and other recognitions as part of the StudentAcademicRecord.</li>
+</ul>
+<h4 id="graduation-model-entities">Graduation Model Entities</h4>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>EducationOrganization</td>
+<td>This entity represents any public or private institution, organization, or agency that provides instructional or support services to students or staff at any level.</td>
+</tr>
+<tr>
+<td>GraduationPlan</td>
+<td>This entity is a plan outlining the required credits, credits by subject,credits by course, and other criteria required for graduation. A graduation plan may be one or more standard plans defined by an education organization and/or individual plans for some or all students.</td>
+</tr>
+<tr>
+<td>PostSecondaryEvent</td>
+<td>This entity captures significant postsecondary events during a student&#39;s high school tenure (e.g., FAFSA application or college application, acceptance, and enrollment) or during a student&#39;s enrollment at a post-secondary institution.</td>
+</tr>
+<tr>
+<td>School</td>
+<td>This entity represents an educational organization that includes staff and students who participate in classes and educational activity groups.</td>
+</tr>
+<tr>
+<td>Student</td>
+<td>This entity represents an individual for whom instruction, services, and/or care are provided in an early childhood, elementary, or secondary educational program under the jurisdiction of a school, education agency or other institution or program. A student is a person who has been enrolled in a school or other educational institution.</td>
+</tr>
+<tr>
+<td>StudentAcademicRecord</td>
+<td>This educational entity represents the cumulative record of academic achievement for a student.</td>
+</tr>
+<tr>
+<td>StudentSchoolAssociation</td>
+<td>This association represents the School in which a student is enrolled. The semantics of enrollment may differ slightly by state. Non-enrollment relationships between a student and an education organization may be described using the StudentEducationOrganizationAssociation.</td>
+</tr>
+</tbody></table>
+<p><img src="/path/to/domain-model.png" alt="Graduation Model Diagram"></p>
+<h4 id="graduation-model">Graduation Model</h4>
+</body><html>

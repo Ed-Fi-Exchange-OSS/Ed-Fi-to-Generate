@@ -1,0 +1,24 @@
+Domain Entity CedsStudentNoDProgramAssociation
+    documentation "This is an extension to edfi.StudentCTEProgramAssociation."
+    date BeginDate
+        documentation "The date the Student was associated with the Program or service."
+        is part of identity
+    integer EducationOrganizationId
+        documentation "The identifier assigned to an education organization."
+        is part of identity
+    integer ProgramEducationOrganizationId
+        documentation "The identifier assigned to an education organization that provides the program"
+        is part of identity
+    shared string ProgramName
+        documentation "The formal name of the Program of instruction, training, services, or benefits available through federal, state, or local agencies."
+        is part of identity
+        is queryable field
+    integer ProgramTypeDescriptorId
+        documentation "Id of the table ProgramTypeDescriptor"
+        is part of identity
+    integer StudentUSI
+            documentation "Id of the table edfi.Student "
+            is part of identity
+    descriptor DisplacementType
+            documentation "The types of placement after secondary education."
+            is optional

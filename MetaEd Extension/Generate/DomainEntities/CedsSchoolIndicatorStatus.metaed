@@ -1,0 +1,27 @@
+Domain Entity CedsSchoolIndicatorStatus
+    documentation "This entity extends the School Indicator Status of CEDS."
+    integer SchoolId
+        documentation "The identifier assigned to a school."
+        is part of identity
+    descriptor IndicatorStatusType
+        documentation "A school's indicator Status Type."
+        is part of identity
+    descriptor IndicatorStatus
+        documentation "A school's indicator Status per the Indicator Status Type."
+        is part of identity
+    descriptor IndicatorStatusSubgroupType
+        documentation "A school's indicator Status's Subgroup Type, such as Race."
+        is part of identity
+    descriptor IndicatorStatusSubgroup
+        documentation "A school's indicator Status's Subgroup, such as American Indian - Alaska Native."
+        is part of identity
+    string StatedDefinedIndicatorStatus
+        documentation "A school's State Defined indicator Status per the Indicator Status Type."
+        is optional
+        max length 100
+    date RecordStartDateTime
+        documentation ""
+        is optional
+    date RecordEndDateTime
+        documentation ""
+        is optional
