@@ -1,3 +1,8 @@
+﻿-- SPDX-License-Identifier: Apache-2.0
+-- Licensed to the Ed-Fi Alliance under one or more agreements.
+-- The Ed-Fi Alliance licenses this file to you under the Apache License, Version 2.0.
+-- See the LICENSE and NOTICES files in the project root for more information.
+
 -- Extended Properties [edfi].[AbsenceEventCategoryDescriptor] --
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This descriptor describes the type of absence', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'AbsenceEventCategoryDescriptor'
 GO
@@ -1289,7 +1294,7 @@ EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The identifier
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'An indication of whether the student received educational services when removed from the regular school program for disciplinary reasons.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'DisciplineAction', @level2type=N'COLUMN', @level2name=N'ReceivedEducationServicesDuringExpulsion'
 GO
-EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'An indication as to whether an offense and/or disciplinary action resulted in a meeting of a student’s Individualized Education Program (IEP) team to determine appropriate placement.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'DisciplineAction', @level2type=N'COLUMN', @level2name=N'IEPPlacementMeetingIndicator'
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'An indication as to whether an offense and/or disciplinary action resulted in a meeting of a studentâ€™s Individualized Education Program (IEP) team to determine appropriate placement.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'DisciplineAction', @level2type=N'COLUMN', @level2name=N'IEPPlacementMeetingIndicator'
 GO
 
 -- Extended Properties [edfi].[DisciplineActionDiscipline] --
@@ -2699,7 +2704,7 @@ EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The total Titl
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The amount of Section 1003(a) and 1003(g) allocations to LEAs.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'LocalEducationAgencyFederalFunds', @level2type=N'COLUMN', @level2name=N'SchoolImprovementAllocation'
 GO
-EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'An indication of the percentage of the Title I, Part A allocation that the SEA reserved in accordance with Section 1003(a) of ESEA and §200.100(a) of ED''s regulations governing the reservation of funds for school improvement under Section 1003(a) of ESEA.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'LocalEducationAgencyFederalFunds', @level2type=N'COLUMN', @level2name=N'SchoolImprovementReservedFundsPercentage'
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'An indication of the percentage of the Title I, Part A allocation that the SEA reserved in accordance with Section 1003(a) of ESEA and Â§200.100(a) of ED''s regulations governing the reservation of funds for school improvement under Section 1003(a) of ESEA.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'LocalEducationAgencyFederalFunds', @level2type=N'COLUMN', @level2name=N'SchoolImprovementReservedFundsPercentage'
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The dollar amount spent on supplemental educational services during the school year under Title I, Part A, Section 1116 of ESEA as amended.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'LocalEducationAgencyFederalFunds', @level2type=N'COLUMN', @level2name=N'SupplementalEducationalServicesFundsSpent'
 GO
@@ -3370,7 +3375,7 @@ EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A unique ident
 GO
 
 -- Extended Properties [edfi].[ProgressDescriptor] --
-EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This descriptor defines yearly progress or growth from last year’s assessment.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'ProgressDescriptor'
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This descriptor defines yearly progress or growth from last yearâ€™s assessment.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'ProgressDescriptor'
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A unique identifier used as Primary Key, not derived from business logic, when acting as Foreign Key, references the parent table.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'ProgressDescriptor', @level2type=N'COLUMN', @level2name=N'ProgressDescriptorId'
 GO
@@ -5876,7 +5881,7 @@ EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Field indicati
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The proficiency level for the yearly English language assessment.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'StudentLanguageInstructionProgramAssociationEnglishLanguageProficiencyAssessment', @level2type=N'COLUMN', @level2name=N'ProficiencyDescriptorId'
 GO
-EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The yearly progress or growth from last year’s assessment.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'StudentLanguageInstructionProgramAssociationEnglishLanguageProficiencyAssessment', @level2type=N'COLUMN', @level2name=N'ProgressDescriptorId'
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The yearly progress or growth from last yearâ€™s assessment.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'StudentLanguageInstructionProgramAssociationEnglishLanguageProficiencyAssessment', @level2type=N'COLUMN', @level2name=N'ProgressDescriptorId'
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'Student is monitored on content achievement who are no longer receiving services.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'StudentLanguageInstructionProgramAssociationEnglishLanguageProficiencyAssessment', @level2type=N'COLUMN', @level2name=N'MonitoredDescriptorId'
 GO
@@ -6018,11 +6023,11 @@ EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The month, day
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The month, day, and year on which the Student first entered a U.S. school.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'StudentMigrantEducationProgramAssociation', @level2type=N'COLUMN', @level2name=N'USInitialSchoolEntry'
 GO
-EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The Qualifying Arrival Date (QAD) is the date the child joins the worker who has already moved, or the date when the worker joins the child who has already moved. The QAD is the date that the child’s eligibility for the MEP begins. The QAD is not affected by subsequent non-qualifying moves.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'StudentMigrantEducationProgramAssociation', @level2type=N'COLUMN', @level2name=N'QualifyingArrivalDate'
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The Qualifying Arrival Date (QAD) is the date the child joins the worker who has already moved, or the date when the worker joins the child who has already moved. The QAD is the date that the childâ€™s eligibility for the MEP begins. The QAD is not affected by subsequent non-qualifying moves.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'StudentMigrantEducationProgramAssociation', @level2type=N'COLUMN', @level2name=N'QualifyingArrivalDate'
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The verified State residency for the student.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'StudentMigrantEducationProgramAssociation', @level2type=N'COLUMN', @level2name=N'StateResidencyDate'
 GO
-EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The Eligibility Expiration Date is used to determine end of eligibility and to account for a child’s eligibility expiring earlier than 36 months from the child’s QAD. A child’s eligibility would end earlier than 36 months from the child’s QAD, if the child is no longer entitled to a free public education (e.g., graduated with a high school diploma, obtained a high school equivalency diploma (HSED), or for other reasons as determined by States’ requirements), or if the child passes away.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'StudentMigrantEducationProgramAssociation', @level2type=N'COLUMN', @level2name=N'EligibilityExpirationDate'
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The Eligibility Expiration Date is used to determine end of eligibility and to account for a childâ€™s eligibility expiring earlier than 36 months from the childâ€™s QAD. A childâ€™s eligibility would end earlier than 36 months from the childâ€™s QAD, if the child is no longer entitled to a free public education (e.g., graduated with a high school diploma, obtained a high school equivalency diploma (HSED), or for other reasons as determined by Statesâ€™ requirements), or if the child passes away.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'StudentMigrantEducationProgramAssociation', @level2type=N'COLUMN', @level2name=N'EligibilityExpirationDate'
 GO
 
 -- Extended Properties [edfi].[StudentMigrantEducationProgramAssociationMigrantEducationProgramService] --

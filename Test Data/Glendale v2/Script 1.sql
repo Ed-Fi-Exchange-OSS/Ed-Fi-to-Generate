@@ -1,3 +1,8 @@
+﻿-- SPDX-License-Identifier: Apache-2.0
+-- Licensed to the Ed-Fi Alliance under one or more agreements.
+-- The Ed-Fi Alliance licenses this file to you under the Apache License, Version 2.0.
+-- See the LICENSE and NOTICES files in the project root for more information.
+
 /*
 This script was created by Visual Studio on 9/29/2018 at 11:10 AM.
 Run this script on EdFi_Ods_Glendale_v21  to make it the same as EdFi_Ods_Glendale_CEDS.

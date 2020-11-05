@@ -1,3 +1,8 @@
+﻿-- SPDX-License-Identifier: Apache-2.0
+-- Licensed to the Ed-Fi Alliance under one or more agreements.
+-- The Ed-Fi Alliance licenses this file to you under the Apache License, Version 2.0.
+-- See the LICENSE and NOTICES files in the project root for more information.
+
 -- Table [edfi].[AcademicHonorCategoryType] --
 CREATE TABLE [edfi].[AcademicHonorCategoryType] (
     [AcademicHonorCategoryTypeId] [INT] IDENTITY(1,1) NOT NULL,
@@ -18483,7 +18488,7 @@ EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The total Titl
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The amount of Section 1003(a) and 1003(g) allocations to LEAs.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'LocalEducationAgencyFederalFunds', @level2type=N'COLUMN', @level2name=N'SchoolImprovementAllocation'
 GO
-EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'An indication of the percentage of the Title I, Part A allocation that the SEA reserved in accordance with Section 1003(a) of ESEA and §200.100(a) of ED''s regulations governing the reservation of funds for school improvement under Section 1003(a) of ESEA.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'LocalEducationAgencyFederalFunds', @level2type=N'COLUMN', @level2name=N'SchoolImprovementReservedFundsPercentage'
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'An indication of the percentage of the Title I, Part A allocation that the SEA reserved in accordance with Section 1003(a) of ESEA and Â§200.100(a) of ED''s regulations governing the reservation of funds for school improvement under Section 1003(a) of ESEA.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'LocalEducationAgencyFederalFunds', @level2type=N'COLUMN', @level2name=N'SchoolImprovementReservedFundsPercentage'
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The dollar amount spent on supplemental educational services during the school year under Title I, Part A, Section 1116 of ESEA as amended.', @level0type=N'SCHEMA', @level0name=N'edfi', @level1type=N'TABLE', @level1name=N'LocalEducationAgencyFederalFunds', @level2type=N'COLUMN', @level2name=N'SupplementalEducationalServicesFundsSpent'
 GO

@@ -1,3 +1,8 @@
+﻿-- SPDX-License-Identifier: Apache-2.0
+-- Licensed to the Ed-Fi Alliance under one or more agreements.
+-- The Ed-Fi Alliance licenses this file to you under the Apache License, Version 2.0.
+-- See the LICENSE and NOTICES files in the project root for more information.
+
 UPDATE [edfi].[Student] SET [BirthDate]='20020705', [SchoolFoodServicesEligibilityDescriptorId]=775 WHERE [StudentUSI]=100095886
 UPDATE [edfi].[Student] SET [BirthDate]='20030122' WHERE [StudentUSI]=100095890
 UPDATE [edfi].[Student] SET [BirthDate]='20020722', [SchoolFoodServicesEligibilityDescriptorId]=775 WHERE [StudentUSI]=100095891

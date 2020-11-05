@@ -1,12 +1,17 @@
+﻿// SPDX-License-Identifier: Apache-2.0
+// Licensed to the Ed-Fi Alliance under one or more agreements.
+// The Ed-Fi Alliance licenses this file to you under the Apache License, Version 2.0.
+// See the LICENSE and NOTICES files in the project root for more information.
+
 Domain Entity CharterContract
     documentation "This is an extension attribute of edfi.School."
     string ContractIdentifier
-        documentation "The unique number a SEA assigns to the contract (or charter) that authorizes the charter school to operate in the state under the state’s charter school legislation."
+        documentation "The unique number a SEA assigns to the contract (or charter) that authorizes the charter school to operate in the state under the stateâ€™s charter school legislation."
         is part of identity
         max length 20
     date ApprovalDate
-         documentation "The effective date of the contract (or charter) that an approved charter school authorizer authorized the charter school to operate in the state under the state’s charter school legislation."
+         documentation "The effective date of the contract (or charter) that an approved charter school authorizer authorized the charter school to operate in the state under the stateâ€™s charter school legislation."
          is required
     date RenewalDate
-         documentation "The date by which the charter school must renew its contract (or charter) with an approved charter school authorizer in order to continue to operate in the state under the state’s charter school legislation."
+         documentation "The date by which the charter school must renew its contract (or charter) with an approved charter school authorizer in order to continue to operate in the state under the stateâ€™s charter school legislation."
          is required

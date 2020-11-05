@@ -1,3 +1,8 @@
+ï»¿-- SPDX-License-Identifier: Apache-2.0
+-- Licensed to the Ed-Fi Alliance under one or more agreements.
+-- The Ed-Fi Alliance licenses this file to you under the Apache License, Version 2.0.
+-- See the LICENSE and NOTICES files in the project root for more information.
+
 	
 	-- FS203 --== Inexperienced teachers =================================================
 	IF NOT EXISTS (SELECT * FROM edfi.Descriptor WHERE edfi.Descriptor.Namespace = 'uri://ed-fi.org/InexperiencedStatusDescriptor'
@@ -62,7 +67,7 @@
 				'uri://ed-fi.org/EmergencyorProvisionalCredentialStatusDescriptor'
 				,'TCHWEMRPRVCRD'
 				,'Emergency or Provisional'
-				,'Emergency or Provisional – Teachers with emergency or provisional credential'
+				,'Emergency or Provisional â€“ Teachers with emergency or provisional credential'
 				,NEWID()
 				,GetDate()
 				,GetDate()
@@ -85,7 +90,7 @@
 				'uri://ed-fi.org/EmergencyorProvisionalCredentialStatusDescriptor'
 				,'TCHWOEMRPRVCRD'
 				,'No Emergency or Provisional'
-				,'No Emergency or Provisional – Teachers without emergency or provisional credential'
+				,'No Emergency or Provisional â€“ Teachers without emergency or provisional credential'
 				,NEWID()
 				,GetDate()
 				,GetDate()

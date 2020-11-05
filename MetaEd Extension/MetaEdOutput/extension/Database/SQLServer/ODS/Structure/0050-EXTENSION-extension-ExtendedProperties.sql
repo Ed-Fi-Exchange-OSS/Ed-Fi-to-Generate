@@ -1,3 +1,8 @@
+﻿-- SPDX-License-Identifier: Apache-2.0
+-- Licensed to the Ed-Fi Alliance under one or more agreements.
+-- The Ed-Fi Alliance licenses this file to you under the Apache License, Version 2.0.
+-- See the LICENSE and NOTICES files in the project root for more information.
+
 -- Extended Properties [extension].[BehaviorTypeDescriptor] --
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'An extension of the Behavior Type.', @level0type=N'SCHEMA', @level0name=N'extension', @level1type=N'TABLE', @level1name=N'BehaviorTypeDescriptor'
 GO
@@ -39,7 +44,7 @@ EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'An indication 
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The identifier assigned to a school by the state education agency (SEA).  Also known as the State School Identification Number (ID).  This ID cannot be updated through this file.', @level0type=N'SCHEMA', @level0name=N'extension', @level1type=N'TABLE', @level1name=N'CedsSchool', @level2type=N'COLUMN', @level2name=N'VirtualSchoolStatusDescriptorId'
 GO
-EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The unique number a SEA assigns to the contract (or charter) that authorizes the charter school to operate in the state under the state’s charter school legislation.', @level0type=N'SCHEMA', @level0name=N'extension', @level1type=N'TABLE', @level1name=N'CedsSchool', @level2type=N'COLUMN', @level2name=N'ContractIdentifier'
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The unique number a SEA assigns to the contract (or charter) that authorizes the charter school to operate in the state under the stateâ€™s charter school legislation.', @level0type=N'SCHEMA', @level0name=N'extension', @level1type=N'TABLE', @level1name=N'CedsSchool', @level2type=N'COLUMN', @level2name=N'ContractIdentifier'
 GO
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'a metric that a state uses to determine the high poverty and low poverty schools', @level0type=N'SCHEMA', @level0name=N'extension', @level1type=N'TABLE', @level1name=N'CedsSchool', @level2type=N'COLUMN', @level2name=N'StatePovertyDesignationDescriptorId'
 GO
@@ -243,11 +248,11 @@ GO
 -- Extended Properties [extension].[CharterContract] --
 EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'This is an extension attribute of edfi.School.', @level0type=N'SCHEMA', @level0name=N'extension', @level1type=N'TABLE', @level1name=N'CharterContract'
 GO
-EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The unique number a SEA assigns to the contract (or charter) that authorizes the charter school to operate in the state under the state’s charter school legislation.', @level0type=N'SCHEMA', @level0name=N'extension', @level1type=N'TABLE', @level1name=N'CharterContract', @level2type=N'COLUMN', @level2name=N'ContractIdentifier'
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The unique number a SEA assigns to the contract (or charter) that authorizes the charter school to operate in the state under the stateâ€™s charter school legislation.', @level0type=N'SCHEMA', @level0name=N'extension', @level1type=N'TABLE', @level1name=N'CharterContract', @level2type=N'COLUMN', @level2name=N'ContractIdentifier'
 GO
-EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The effective date of the contract (or charter) that an approved charter school authorizer authorized the charter school to operate in the state under the state’s charter school legislation.', @level0type=N'SCHEMA', @level0name=N'extension', @level1type=N'TABLE', @level1name=N'CharterContract', @level2type=N'COLUMN', @level2name=N'ApprovalDate'
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The effective date of the contract (or charter) that an approved charter school authorizer authorized the charter school to operate in the state under the stateâ€™s charter school legislation.', @level0type=N'SCHEMA', @level0name=N'extension', @level1type=N'TABLE', @level1name=N'CharterContract', @level2type=N'COLUMN', @level2name=N'ApprovalDate'
 GO
-EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The date by which the charter school must renew its contract (or charter) with an approved charter school authorizer in order to continue to operate in the state under the state’s charter school legislation.', @level0type=N'SCHEMA', @level0name=N'extension', @level1type=N'TABLE', @level1name=N'CharterContract', @level2type=N'COLUMN', @level2name=N'RenewalDate'
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'The date by which the charter school must renew its contract (or charter) with an approved charter school authorizer in order to continue to operate in the state under the stateâ€™s charter school legislation.', @level0type=N'SCHEMA', @level0name=N'extension', @level1type=N'TABLE', @level1name=N'CharterContract', @level2type=N'COLUMN', @level2name=N'RenewalDate'
 GO
 
 -- Extended Properties [extension].[CharterSchoolApprovalAgency] --
