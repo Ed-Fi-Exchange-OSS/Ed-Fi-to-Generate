@@ -1,6 +1,15 @@
-﻿# Insert Repository Name Here
+﻿# Ed-Fi-to-Generate
 
-Insert project information here
+The Ed-Fi Generate plug-in provides a standard means to transfer data from an
+Ed-Fi ODS into the Generate CEDS Integrated Data Store (IDS). 
+
+The plug-in consists of a set of standardized ETLs that agencies would use to
+migrate data from an Ed-Fi ODS into CEDS IDS and into CEDS Reporting Data Store.
+
+Ed-Fi Alliance tested the ETLs against the Ed-Fi Glendale Sample Database based
+on v2x Data Standard.
+
+For more information, review the files in the [documentation](documentation) directory.
 
 ## Legal Information
 
